@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/*培训信息*/
+#info .form-box label {
+    float: left;
+    margin-right: 10px;
+    min-width: 91px;
+    height: 30px;
+    line-height: 30px;
+}
+#info .form-box .form-item-inline,
+#info .form-box .form-item-height {
+    position: relative;
+    margin: 5px 0 5px 101px;
+}
+#info .form-box .form-item .form-control,
+#info .form-box .form-item-fr .form-control {
+    display: inline-block;
+    width: 220px;
+}
+#info .form-box .form-item-fr .input-xs,
+#info .form-box .form-item .input-xs{
+    width: 101px
+}
+.date {
+    background: #fff url("../../images/ico_date.png") no-repeat 80px center;
+}
+#info .form-box .checkbox-inline,
+#info .form-box .radio-inline {
+    min-width: 0;
+}
+
+/*培训人员推荐*/
+#man .form-box-title,
+#recommend .form-box-title{
+    padding: 0;
+    margin: 0 10px 10px;
+}
+#man .form-box .form-item .form-control,
+#recommend .form-box .form-item .form-control{
+    display: inline-block;
+    width: 130px;
+}
+
+/*就业推荐表*/
+.table-box .help-info {
+    position: absolute;
+    top: -30px;
+    right: 0;
+}
+.table-box .tb-main {
+    position: relative;
+}
+#tb-info1, #tb-pageBar {
+    margin-right: 100px;
+}
+.table-box .chooseList {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    border: 1px solid #eee;
+}
+.table-box .chooseList li {
+    height: 40px;
+    line-height: 40px;
+}
+.table-box .chooseList .btn {
+    padding: 5px 10px;
+}
+.table-box .chooseList .btn .glyphicon {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/*审核模态框*/
+#modal-audit label {
+    min-width: 0;
+}
+#modal-audit .radio-inline input[type=radio] {
+    top: -2px;
+}
+#modal-audit .radio-inline {
+    margin-right: 30px;
+}
+#modal-audit .table>tbody>tr>td {
+    vertical-align: middle;
+}
+
+/*报名、录入、姓名模态框*/
+#modal-enroll .form-box .clearfix,
+#modal-entering .form-box .clearfix,
+#modal-name .form-box .clearfix{
+    margin-bottom: 0;
+}
+#modal-enroll .form-box .form-item label{
+    min-width: 105px;
+}
+#modal-enroll .form-box .form-item .radio-inline,
+#modal-entering .form-box .form-item .radio-inline,
+#modal-name .form-box .form-item .radio-inline{
+    min-width: 0;
+}
+#modal-enroll .form-box .form-item .form-control,
+#modal-enroll .form-box .form-item-fr .form-control,
+#modal-entering .form-box .form-item .form-control,
+#modal-entering .form-box .form-item-fr .form-control,
+#modal-name .form-box .form-item .form-control,
+#modal-name .form-box .form-item-fr .form-control{
+    display: inline-block;
+    width: 150px;
+}
+#modal-enroll .date,
+#modal-entering .date,
+#modal-name .date{
+    background: #fff url("../../images/ico_date.png") no-repeat 120px center;
+}
+/*录入模态框*/
+#modal-entering .form-box .form-item label{
+    min-width: 131px;
+}
+
+/*姓名模态框*/
+#modal-name .form-box-title {
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#modal-name .form-box .form-item label{
+    min-width: 131px;
+}

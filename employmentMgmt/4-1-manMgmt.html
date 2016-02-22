@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,Chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>人员管理</title>
+
+    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/datetimepicker/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="lib/qlTree/qlTree.css">
+    <link rel="stylesheet" href="styles/css/base.css">
+    <link rel="stylesheet" href="styles/css/4-1-manMgmt.css">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="lib/html5shiv/html5shiv-3.7.3.min.js"></script>
+    <script type="text/javascript" src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="content-box">
+    <div class="cb-sidebar">
+        <div id="qlTree"></div>
+    </div>
+    <div class="cb-content">
+        <div class="cc-top">
+            <h3>人员管理</h3>
+        </div>
+        <div class="cc-main">
+            <div class="cm-box">
+                <div class="form-box">
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label style="min-width: 0;">户籍：</label>
+                            <span class="label labelCur">不限</span>
+                            <span class="label">本区户籍</span>
+                            <span class="label">非本区户籍</span>
+                        </div>
+                        <div class="form-item">
+                            <label>审核状态：</label>
+                            <span class="label labelCur">不限</span>
+                            <span class="label">待审核</span>
+                            <span class="label">审核通过</span>
+                            <span class="label">审核不通过</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <select class="form-control input-sm">
+                                <option value="112登记状态" selected>112登记状态</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <select class="form-control input-sm">
+                                <option value="112人员身份" selected>112人员身份</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <select class="form-control input-sm">
+                                <option value="就业意愿" selected>就业意愿</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <select class="form-control input-sm">
+                                <option value="就业推荐次数" selected>就业推荐次数</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <select class="form-control input-sm">
+                                <option value="培训意愿" selected>培训意愿</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <select class="form-control input-sm">
+                                <option value="培训次数" selected>培训次数</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <select class="form-control input-sm">
+                                <option value="目前供职情况" selected>目前供职情况</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <input type="text" class="form-control input-sm date" placeholder="简历更新日期1">
+                            至
+                            <input type="text" class="form-control input-sm date" placeholder="简历更新日期2">
+                        </div>
+                        <div class="form-item">
+                            <input type="text" class="form-control input-sm" placeholder="年龄1">
+                            至
+                            <input type="text" class="form-control input-sm" placeholder="年龄2">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <select class="form-control input-sm">
+                                <option value="街道" selected>街道</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <select class="form-control input-sm">
+                                <option value="社区" selected>社区</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <input type="text" class="form-control input-sm" placeholder="姓名或身份证号">
+                        </div>
+                        <div class="form-item">
+                            <a role="button" class="btn btn-success btn-sm">查询</a>
+                            <a role="button" class="btn btn-info btn-sm">重置</a>
+                            <a class="btn btn-sm btn-orange"  data-toggle="modal" data-target="#modal-audit">批量审核</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-box">
+                    <div id="tb-info"></div>
+                    <div id="tb-pageBar"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- 审核模态框 -->
+<div class="modal fade" id="modal-audit" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">审核</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-box">
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>
+                                <span class="star">*</span>
+                                审核结果：
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <label class="radio-inline">
+                                <input type="radio" name="auditResult"> 审核通过
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <label class="radio-inline">
+                                <input type="radio" name="auditResult"> 审核不通过
+                            </label>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>
+                                <span class="star">*</span>
+                                审核意见：
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <textarea rows="3" class="form-control" style="width: 400px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">确认</button>
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="lib/jQuery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/placeholder/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="lib/datetimepicker/jquery.datetimepicker.js"></script>
+<script type="text/javascript" src="lib/artTemplate/template-simple.js"></script>
+<script type="text/javascript" src="lib/ulynlist/ulynlist.js"></script>
+<script type="text/javascript" src="lib/ulynlist/ulynlist.table.js"></script>
+<script type="text/javascript" src="lib/ulynlist/ulynlist.pagebar.js"></script>
+<script type="text/javascript" src="lib/qlTree/qlTree.js"></script>
+<script type="text/javascript" src="js/4-1-manMgmt.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+</body>
+</html>

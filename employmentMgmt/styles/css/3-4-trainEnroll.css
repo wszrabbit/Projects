@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.form-box-title {
+    padding: 0;
+    margin: 0 10px 10px;
+}
+.form-box .form-item .form-control {
+    display: inline-block;
+    width: 130px;
+}
+
+
+/*报名、录入、姓名模态框*/
+#modal-enroll .form-box .clearfix,
+#modal-entering .form-box .clearfix,
+#modal-name .form-box .clearfix{
+    margin-bottom: 0;
+}
+#modal-enroll .form-box .form-item label{
+    min-width: 105px;
+}
+#modal-enroll .form-box .form-item .radio-inline,
+#modal-entering .form-box .form-item .radio-inline,
+#modal-name .form-box .form-item .radio-inline{
+    min-width: 0;
+}
+#modal-enroll .form-box .form-item .form-control,
+#modal-enroll .form-box .form-item-fr .form-control,
+#modal-entering .form-box .form-item .form-control,
+#modal-entering .form-box .form-item-fr .form-control,
+#modal-name .form-box .form-item .form-control,
+#modal-name .form-box .form-item-fr .form-control{
+    display: inline-block;
+    width: 150px;
+}
+#modal-enroll .date,
+#modal-entering .date,
+#modal-name .date{
+    background: #fff url("../../images/ico_date.png") no-repeat 120px center;
+}
+/*录入模态框*/
+#modal-entering .form-box .form-item label{
+    min-width: 131px;
+}
+
+/*姓名模态框*/
+#modal-name .form-box-title {
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#modal-name .form-box .form-item label{
+    min-width: 131px;
+}

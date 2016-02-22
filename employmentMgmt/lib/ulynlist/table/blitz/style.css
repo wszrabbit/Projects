@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+
+.ulynlist_flat_table th.asc span,
+.ulynlist_flat_table th.desc span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 7px;
+    height: 5px;
+}
+.ulynlist_flat_table th.asc span{
+    background:url(images/sortAsc.gif) no-repeat;
+}
+.ulynlist_flat_table th.desc span{
+    background:url(images/sortDesc.gif) no-repeat;
+}

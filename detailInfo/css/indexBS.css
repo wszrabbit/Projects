@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+/*侧边栏*/
+.sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 180px;
+    height: 100%;
+    background-color: #2C3E50;
+    color: #fff;
+}
+/*侧边栏头部搜索*/
+.sidebar .sidebarHead {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+.sidebar .sidebarHead>.glyphicon {
+    font-size:24px;
+    top:7px;
+    margin-right:10px;
+}
+.sidebar .sidebarHead .has-feedback {
+    width: 150px;
+    margin: 30px auto 10px;
+}
+.sidebar .sidebarHead .has-feedback .glyphicon {
+    font-size:12px;
+    cursor: pointer;
+}
+.sidebar .sidebarHead .form-group-sm .form-control {
+    width:150px;
+    color: #fff;
+    background-color: #455464;
+    border: 1px solid transparent;
+}
+/*侧边栏一级菜单*/
+.sidebar .sidebarMenu {
+    position: absolute;
+    top: 120px;
+    bottom: 0;
+    width: 180px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.sidebarMenu li {
+    cursor: pointer;
+}
+.sidebarMenu>li {
+    border-bottom: 1px solid #293847;
+}
+.sidebarMenu div {
+    padding: 10px;
+    position: relative;
+}
+.sidebarMenu div.on {
+    border-right: 5px solid #CA0000;
+    background-color: #0F1D2B;
+}
+.sidebarMenu div i.glyphicon {
+    margin-right: 10px;
+    top:2px;
+}
+.sidebarMenu div span.glyphicon {
+    font-size:12px;
+    position: absolute;
+    right:20px;
+    top:15px;
+}
+/*侧边栏二级菜单*/
+.sidebarMenu .sidebarSubMenu li {
+    padding: 10px 40px;
+    background-color: #2C3E50;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.sidebarMenu .sidebarSubMenu li.on,
+.sidebarMenu .sidebarSubMenu li:hover {
+    background-color: #4C6175;
+}
+/*侧边栏底部按钮*/
+.sidebar .sidebarMenu .showAll {
+    display: inline-block;
+    background-color: #293744;
+    padding: 8px 20px;
+    margin: 20px 40px;
+    cursor: pointer;
+}
+/*右侧主体内容*/
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 180px;
+    color: #000;
+    overflow: hidden;
+    background-color: #F0F0F0;
+}
+/*右侧主体内容标题*/
+.content .currentSite {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    background-color: #E9E9E9;
+}
+.content .currentSite .glyphicon {
+    margin: 0 5px;
+    font-size:12px;
+}
+/*右侧主体内容主体*/
+.content .contentBody {
+    position: absolute;
+    top: 65px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    overflow: auto;
+}
+.content .contentBody > div {
+    margin:0 10px 15px 10px;
+    min-width:824px;
+}
+.content .contentBody .title {
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid #c5c5c5;
+    background-color: #F0F0F0;
+}
+
+.content .contentBody .table {
+    margin-bottom: 0;
+    border: 1px solid #c5c5c5;
+}
+
+
+.content .contentBody .table > tbody > tr > td {
+    vertical-align: middle;
+    padding: 0 20px;
+    height: 48px;
+    border: 1px solid #c5c5c5;
+}
+
+.metadataDes .checkTable {
+    margin-left: 20px;
+}
+
+.metadataDes .btnDisplay {
+    position: absolute;
+    right: 30px;
+    top:10px;
+    background-color: #EAEAEA;
+    color: #385C85;
+    outline: none;
+    padding: 4px 10px;
+    font-size: 16px;
+}
+.metadataDes .btnBack:before {
+    content: '收起';
+}
+.metadataDes .btnExtend:before {
+    content: '展开';
+}
+.metadataDes .btnDisplay .glyphicon {
+    top: 2px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.contentBody .divInner {
+    background-color: #fff;
+    border-left:1px solid #c5c5c5;
+    border-right:1px solid #c5c5c5;
+    border-bottom:1px solid #c5c5c5;
+}
+.contentBody .divInner .divInnerHeader {
+    padding:15px 60px;
+    position: relative;
+}
+.contentBody .divInner .divInnerContent {
+    margin:0 15px;
+}
+
+.contentBody .divInner .tableInner {
+    border: 1px solid #c5c5c5;
+}
+.contentBody .divInner .tableInner .borderBottom {
+    border-bottom: 1px solid #620101;
+}
+.contentBody .divInner .tableInner th,
+.contentBody .divInner .tableInner td {
+    text-align: center;
+    height:50px;
+}
+.contentBody .divInner .tableInner th {
+    font-size:16px;
+}
+.contentBody .divInner .tableInner .bgColor {
+    background-color: #EAEAEA;
+}
+.contentBody .divInner .tableInner a {
+    color: #002358;
+    text-decoration: underline;
+}
+
+.contentBody .divInner .pageInfo {
+    padding:20px 10px;
+    position: relative;
+}
+.contentBody .divInner .pageInfo .disabled {
+    cursor: default;
+    outline:none;
+}
+.contentBody .divInner .pageInfo .pageTo {
+    position: absolute;
+    right:10px;
+}
+
+.contentBody .relateInfo .tabs {
+    position: absolute;
+    right: 50px;
+    bottom: -1px;
+}
+.contentBody .relateInfo .tabs li {
+    float: left;
+}
+.contentBody .relateInfo .tabs li a {
+    display: block;
+    line-height: 35px;
+    padding: 0 20px;
+    height: 35px;
+    font-weight: bold;
+    color: #000;
+}
+.contentBody .relateInfo .tabs li.active a {
+    color: #001C51;
+    background-color: #fff;
+    border: 1px solid #c5c5c5;
+    border-bottom: 1px solid #fff;
+}
+.contentBody .relateInfo .tabContent {
+   padding-top: 10px;
+}

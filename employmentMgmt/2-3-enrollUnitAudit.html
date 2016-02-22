@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,Chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>招聘会管理-报名单位审核</title>
+
+    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/datetimepicker/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="lib/qlTree/qlTree.css">
+    <link rel="stylesheet" href="styles/css/base.css">
+    <link rel="stylesheet" href="styles/css/2-3-enrollUnitAudit.css">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="lib/html5shiv/html5shiv-3.7.3.min.js"></script>
+    <script type="text/javascript" src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="content-box">
+    <div class="cb-sidebar">
+        <div id="qlTree"></div>
+    </div>
+    <div class="cb-content">
+        <div class="cc-top">
+            <h3><a href="2-1-recFairMgmt.html">招聘会管理</a><span class="glyphicon glyphicon-menu-right"></span>报名单位审核</h3>
+        </div>
+        <div class="cc-main">
+            <div class="cm-box">
+                <div class="form-box">
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>招聘会名称：</label>
+                            <span class="fn">厦门市湖里区服务企业用工专场招聘会（6月）</span>
+                        </div>
+                        <div class="form-item">
+                            <label>招聘日期：</label>
+                            <span class="fn">2015-12-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-box-title"></div>
+                <div class="form-box">
+                    <div class="clearfix">
+                        <div class="form-item form-item-height">
+                            <label>报名单位审核状态：</label>
+                            <span class="label labelCur">待审核</span>
+                            <span class="label">审核通过</span>
+                            <span class="label">审核不通过</span>
+                        </div>
+                        <div class="form-item-fr tr">
+                            <a role="button" class="btn btn-sm btn-orange" data-toggle="modal" data-target="#modal-audit">审核</a>
+                            <a role="button" class="btn btn-sm btn-primary">导出</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-box">
+                    <div id="tb-info1" class="has-tooltip"></div>
+                    <div id="tb-pageBar"></div>
+                    <!--报名单位名称tooltip-->
+                    <div class="tooltip-box" style="display: none;">
+                        <div class="tooltip-main">
+                            <div class="tooltip-header">
+                                <h3 class="fb">厦门市湖里区服务企业用工专场招聘会（已审核）</h3>
+                                <p class="tr">2015年第01期</p>
+                            </div>
+                            <div class="tooltip-body">
+                                <table  >
+                                    <tbody>
+                                    <tr>
+                                        <td><label>年龄要求：</label><span>25-40周岁</span></td>
+                                        <td><label>性别要求：</label><span>不限</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>文化程度要求：</label><span>大专以上</span></td>
+                                        <td><label>工作年限：</label><span>五年以上工作经验</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>招聘人数：</label><span>10</span>人</td>
+                                        <td><label>招聘有效期：</label><span>2015-12-24~2016-03-01</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>参考月薪：</label><span>8000-15000</span>元/月</td>
+                                        <td><label>上班时间：</label><span>8.0小时/天 5天/周 正常白班</span></td>
+                                    </tr>
+                                    <tr><td colspan="2"><label>福利待遇：</label>基本工资+项目奖金+五险+年终奖13薪资（详情面谈）</td></tr>
+                                    <tr>
+                                        <td colspan="2"><label>岗位职责：</label>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><label>任职资格：</label>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>招聘联系人：</label><span>刘女士</span></td>
+                                        <td><label>招聘联系电话：</label><span>12365478852(合则约见、谢绝来电)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><label>公司地址：</label>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- 审核模态框 -->
+<div class="modal fade" id="modal-audit" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">招聘会申请资格审核</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-box">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th width="45%">招聘会名称</th>
+                            <th width="25%">审核结果</th>
+                            <th width="30%">审核意见</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <label class="radio-inline">
+                                    <input type="radio" name="audit-result"> 通过
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="audit-result"> 不通过
+                                </label>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <label class="radio-inline">
+                                    <input type="radio" name="audit-result"> 通过
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="audit-result"> 不通过
+                                </label>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-blue btn-sm" data-dismiss="modal">确认</button>
+                <button type="button" class="btn btn-gray btn-sm" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="lib/jQuery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/datetimepicker/jquery.datetimepicker.js"></script>
+<script type="text/javascript" src="lib/placeholder/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="lib/artTemplate/template-simple.js"></script>
+<script type="text/javascript" src="lib/ulynlist/ulynlist.js"></script>
+<script type="text/javascript" src="lib/ulynlist/ulynlist.table.js"></script>
+<script type="text/javascript" src="lib/ulynlist/ulynlist.pagebar.js"></script>
+<script type="text/javascript" src="lib/qlTree/qlTree.js"></script>
+<script type="text/javascript" src="js/2-1-recFairMgmt.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+</body>
+</html>

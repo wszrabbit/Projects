@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*CSS reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,
+select,label,button,textarea,p,blockquote,th,td{
+    margin: 0;padding: 0;
+    list-style: none;
+    font:12px/1.5 "Arial", "sans-serif", "微软雅黑", "宋体", "Tahoma";
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;  }
+img {vertical-align: middle;border: none;  }
+table{ width: 100%;border-collapse: collapse; }
+li,button,select{cursor: pointer; outline:none;}
+button span, button img {margin-right:5px;  }
+.hide {display: none;}
+.unVisible {
+    visibility: hidden;
+}
+.bg-fff {background-color: #fff;}
+.btn:focus,
+.btn:active,
+.btn:active:focus{
+    outline:none;
+}

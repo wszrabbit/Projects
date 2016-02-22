@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,Chrome=1"/>
+    <title>综合查询</title>
+
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/base.css">
+
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5shiv-3.7.3.min.js"></script>
+        <script type="text/javascript" src="js/respond.min.js"></script>
+        <script type="text/javascript" src="js/ie8_getEBCN.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="sidebar">
+        <div class="pageTitle">
+            <img src="images/ico_chair.png" alt=""/>综合查询
+        </div>
+        <ul class="menu">
+            <li>
+                <div class="on"><img src="images/ico_computer.png" alt=""/>人</div>
+                <ul class="subMenu">
+                    <li class="on">常住人口信息</li>
+                    <li>发放补助统计</li>
+                </ul>
+            </li>
+            <li>
+                <div><img src="images/ico_house.png" alt=""/>房</div>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="contentTitle">常住人口信息</div>
+        <div class="contentBody">
+            <div class="infoQuery">
+                <div>
+                    <select>
+                        <option>集美区</option>
+                    </select>
+                    <select>
+                        <option>集美街道</option>
+                    </select>
+                    <select>
+                        <option>银亭社区</option>
+                    </select>
+                </div>
+                <span class="arrowR"></span>
+                <div>
+                    <input type="text" placeholder="请输入姓名"/>
+                    <input type="text" placeholder="请输入身份证"/>
+                </div>
+                <div>
+                    <button type="button" class="btnQuery"><img src="images/ico_search.png" alt=""/>查询</button>
+                    <button type="button" class="btnReset"><img src="images/ico_reset.png" alt=""/>重置</button>
+                    <button type="button" class="btnQuery btnAquery"><img src="images/ico_search.png" alt=""/><span class="arrowTip"></span>高级查询</button>
+                </div>
+
+            </div>
+            <div class="advQuery">
+                <table>
+                    <tr class="bgColor">
+                        <td class="right">全部<span class="arrowR"></span></td>
+                        <td>
+                            <label class="labelRed">文化程度：大专<span class="closeRed">x</span></label>
+                            <label class="label">婚姻状况：老年型，成年型<span class="close">x</span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="right">
+                            筛选条件：
+                        </td>
+                        <td>
+                            <select>
+                                <option>文化程度</option>
+                            </select>
+                            <select>
+                                <option>婚姻状况</option>
+                            </select>
+                            <select>
+                                <option>人口类型</option>
+                            </select>
+                            <select>
+                                <option>人口状态</option>
+                            </select>
+                            <input class="large"  type="text" value="年龄:                   至           "/>
+                            <input type="text" placeholder="家庭编号"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>
+                            <select>
+                                <option>民族</option>
+                            </select>
+                            <input class="large" type="text" placeholder="户籍地详址"/>
+                            <input type="text" placeholder="移动电话"/>
+                            <button type="button" class="btnQuery"><img src="images/ico_search.png" alt=""/>查询</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="btnGroup">
+                <input type="checkbox" id="all"><label for="all">全选</label>
+                <button type="button" class="btnExport"><img src="images/ico_export.png" alt=""/>导出EXCEL</button>
+                <button type="button" class="btnMessages"><img src="images/ico_message.png" alt=""/>发送短信</button>
+                <button type="button" class="btnAll"><img src="images/ico_all.png" alt=""/>发送全部</button>
+                <button type="button" class="btnPrint"><img src="images/ico_print.png" alt=""/>打印</button>
+                <div class="showWay">
+                    <div class="icoTable bg-fff"><img src="images/ico_table.png" alt=""></div><div class="icoLoca"><img src="images/ico_loca.png" alt=""></div>
+                </div>
+            </div>
+            <div class="queryResult">
+                <table>
+                    <tr>
+                        <th>选择<span>|</span></th>
+                        <th>姓名<img src="images/ico_incre.png" alt=""><span>|</span></th>
+                        <th>性别<img src="images/ico_sort.png" alt=""><span>|</span></th>
+                        <th>民族<img src="images/ico_sort.png" alt=""><span>|</span></th>
+                        <th>户籍地详址<img src="images/ico_sort.png" alt=""><span>|</span></th>
+                        <th>现住地详址<span>|</span></th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" checked/></td>
+                        <td class="bgColor">越越越</td>
+                        <td>女</td>
+                        <td class="bgColor">汉</td>
+                        <td>集美区侨英街道1022号</td>
+                        <td class="bgColor">集美区侨英街道1022号</td>
+                        <td><a>人员详细</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td class="bgColor">越越越</td>
+                        <td>女</td>
+                        <td class="bgColor">汉</td>
+                        <td>集美区侨英街道1022号</td>
+                        <td class="bgColor">集美区侨英街道1022号</td>
+                        <td><a>人员详细</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td class="bgColor">越越越</td>
+                        <td>女</td>
+                        <td class="bgColor">汉</td>
+                        <td>集美区侨英街道1022号</td>
+                        <td class="bgColor">集美区侨英街道1022号</td>
+                        <td><a>人员详细</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td class="bgColor">越越越</td>
+                        <td>女</td>
+                        <td class="bgColor">汉</td>
+                        <td>集美区侨英街道1022号</td>
+                        <td class="bgColor">集美区侨英街道1022号</td>
+                        <td><a>人员详细</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td class="bgColor">越越越</td>
+                        <td>女</td>
+                        <td class="bgColor">汉</td>
+                        <td>集美区侨英街道1022号</td>
+                        <td class="bgColor">集美区侨英街道1022号</td>
+                        <td><a>人员详细</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td class="bgColor">越越越</td>
+                        <td>女</td>
+                        <td class="bgColor">汉</td>
+                        <td>集美区侨英街道1022号</td>
+                        <td class="bgColor">集美区侨英街道1022号</td>
+                        <td><a>人员详细</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td class="bgColor">越越越</td>
+                        <td>女</td>
+                        <td class="bgColor">汉</td>
+                        <td>集美区侨英街道1022号</td>
+                        <td class="bgColor">集美区侨英街道1022号</td>
+                        <td><a>人员详细</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td class="bgColor">越越越</td>
+                        <td>女</td>
+                        <td class="bgColor">汉</td>
+                        <td>集美区侨英街道1022号</td>
+                        <td class="bgColor">集美区侨英街道1022号</td>
+                        <td><a>人员详细</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td class="bgColor">越越越</td>
+                        <td>女</td>
+                        <td class="bgColor">汉</td>
+                        <td>集美区侨英街道1022号</td>
+                        <td class="bgColor">集美区侨英街道1022号</td>
+                        <td><a>人员详细</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td class="bgColor">越越越</td>
+                        <td>女</td>
+                        <td class="bgColor">汉</td>
+                        <td>集美区侨英街道1022号</td>
+                        <td class="bgColor">集美区侨英街道1022号</td>
+                        <td><a>人员详细</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td class="bgColor">越越越</td>
+                        <td>女</td>
+                        <td class="bgColor">汉</td>
+                        <td>集美区侨英街道1022号</td>
+                        <td class="bgColor">集美区侨英街道1022号</td>
+                        <td><a>人员详细</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

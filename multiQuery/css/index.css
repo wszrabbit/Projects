@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+/*侧边栏*/
+.sidebar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    background-color: #e5e6e8;
+    overflow-y: auto;
+}
+.pageTitle {
+    color: #125683;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.pageTitle img {
+    margin-right: 5px;
+}
+.menu>li {
+    background-color: #DCDDDF;
+}
+.menu div {
+    color:#125683;
+    font-size: 16px;
+    padding: 10px 10px;
+}
+.menu div img {
+    margin-right: 10px;
+}
+.menu div.on {
+    background-color: #C7D0D7;
+}
+.menu .subMenu li {
+    padding: 10px 30px;
+    background-color: #e5e6e8;
+}
+.subMenu li.on {
+    background-color: #D2D6D9;
+    border-right: 3px solid #0E7999;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 180px;
+}
+/*主体内容标题*/
+.content .contentTitle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    background-color: #F4F6F5;
+    color: #125683;
+}
+.content .contentBody {
+    position: absolute;
+    top: 42px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: auto;
+}
+
+.infoQuery {
+    min-width: 804px;
+    margin: 0 20px 10px 20px;
+}
+
+.infoQuery div {
+    display: inline-block;
+    margin-top:10px;
+}
+.infoQuery .arrowR {
+    margin:0 10px 0 5px;
+    position: relative;
+}
+.infoQuery .arrowR:before, .infoQuery .arrowR:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -6px;
+    top: 0;
+    border: 5px solid transparent;
+    border-left-color: #fff;
+}
+.infoQuery .arrowR:before {
+    border-left-color: #000;
+    right: -8px;
+}
+.infoQuery select, .advQuery select{
+    padding: 5px 0;
+}
+.infoQuery select,.advQuery select, .infoQuery input, .advQuery input {
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-right:5px;
+}
+/*箭头*/
+.arrowTip {
+    position: relative;
+}
+.arrowTip:after,
+.arrowTip:before {
+    content: '';
+    width: 0;
+    height:0;
+    position: absolute;
+    top: 22px;
+    border: 6px solid transparent;
+    border-bottom-color: #fff;
+}
+.arrowTip:before {
+    border-bottom-color: #C3CDD8;
+    top: 20px;
+}
+
+input.large {
+    width: 268px;
+}
+.advQuery {
+    margin: 0 20px;
+    border: 1px solid #C3CDD8;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    min-width: 804px;
+}
+.advQuery table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.advQuery tr {
+    height: 30px;
+}
+.advQuery tr.bgColor {
+    background-color: #F4F4F4;
+    border-bottom: 1px dashed #ccc;
+}
+.advQuery .arrowR {
+    margin: 0 10px;
+    position: relative;
+}
+.advQuery .arrowR:before, .advQuery .arrowR:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -8px;
+    top: 2px;
+    border: 5px solid transparent;
+    border-left-color: #F4F4F4;
+}
+.advQuery .arrowR:before {
+    border-left-color: #000;
+    right: -10px;
+}
+.advQuery td {
+    padding:5px;
+}
+.advQuery td.right {
+    text-align: right;
+    padding-left: 20px;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+.btnQuery, .btnReset, .btnExport, .btnAll, .btnMessages, .btnPrint {
+    color: #fff;
+    padding: 5px 5px;
+    margin-right:5px;
+    border: 1px solid transparent;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.btnQuery {
+    background-color: #81AE2D;
+}
+.btnReset {
+    background-color: #4A96DC;
+}
+.btnAquery {
+    background-color: #DA8914;
+}
+
+.label, .labelRed {
+    background-color: #fff;
+    padding: 3px 20px;
+    position: relative;
+}
+.labelRed {
+    border: 1px solid #f00;
+    margin-right: 10px;
+}
+.label .close, .labelRed .closeRed {
+    position: absolute;
+    right: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.labelRed .closeRed {
+    color: #f00;
+}
+
+.btnGroup {
+    position: relative;
+    height: 50px;
+    line-height: 45px;
+    padding:0 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    background-color: #F4F6F5;
+    min-width: 844px;
+}
+.btnGroup .showWay {
+    position: absolute;
+    right: 20px;
+    top:0;
+    bottom:0;
+    text-align: center;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    cursor: pointer;
+}
+.btnGroup .showWay div {
+    display: inline-block;
+    width: 41px;
+    height: 47px;
+    line-height: 47px;
+}
+.btnGroup .showWay .icoTable {
+    border-right:1px solid #ddd;
+}
+.btnGroup .showWay .icoLoca {
+
+}
+.btnGroup label {
+    font-weight: bold;
+    margin:0 10px;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.btnExport {
+    background-color: #DA8914;
+}
+.btnMessages {
+    background-color: #5DB75E;
+}
+.btnAll {
+    background-color: #4996DE;
+}
+.btnPrint {
+    background-color: #1470AF;
+}
+
+.queryResult {
+    min-width: 844px;
+}
+.queryResult table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.queryResult table th {
+    position: relative;
+    height: 35px;
+    background-color: #fff;
+}
+.queryResult table th img {
+    margin-left:5px;
+    cursor: pointer;
+}
+.queryResult table th span {
+    position: absolute;
+    color: #bbb;
+    right: 0;
+}
+.queryResult table tr {
+    border-bottom: 2px solid #fff;
+    background-color: #E2E8E8;
+}
+.queryResult table td {
+    text-align: center;
+    padding:10px 0;
+}
+.queryResult table td.bgColor {
+    background-color: #EDF1F2;
+}
+.queryResult td a {
+    color: #155D8E;
+    cursor: pointer;
+}

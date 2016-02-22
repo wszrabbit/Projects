@@ -1,0 +1,95 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding:0;
+    font-size:12px;
+    color: #333;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.header {
+    min-height:75px;
+}
+.content {
+    min-width:400px;
+    height:500px;
+    position: relative;
+    overflow: hidden;
+}
+.content .banner img {
+    min-width:100%;
+    display: block;
+    height:500px;
+    vertical-align: middle;
+}
+.loginBox {
+    width: 320px;
+    height: 300px;
+    background:#fff;
+    background:rgba(255,255,255,.5);
+    filter:alpha(opacity=50);  /*IE6/7/8*/
+    position: absolute;
+    top:50%;
+    right:15%;
+    margin-top:-150px;
+    border:1px solid #fff;
+}
+.loginTitle {
+    padding:15px 20px;
+    font-size:14px;
+    font-weight:bold;
+    color: #fff;
+    background-color: #4792DF;
+    position: absolute;
+    width:100%;
+}
+.loginBox .form-group {
+    margin:30px;
+    display: block;
+    position: absolute;
+    top:46px;
+    width:80%;
+}
+.form-control {
+    margin-bottom:15px;
+    position: relative;
+}
+.form-control img {
+    position: absolute;
+    left: 8px;
+    top:8px;
+}
+.form-control input {
+    width: 100%;
+    padding: 10px 30px;
+    border:transparent;
+    background:#fff;
+    background:rgba(255,255,255,.7);
+    filter:alpha(opacity=70);  /*IE6/7/8*/
+}
+.checkbox {
+    margin-bottom:10px;
+}
+.checkbox input {
+    width: 16px;
+    height:16px;
+    vertical-align: middle;
+    margin-right:5px;
+    cursor: pointer;
+    border:1px solid transparent;
+    background-color: #ccc;
+}
+.form-group button {
+    display: block;
+    width:100%;
+    background-color: #1369A3;
+    padding:10px 0;
+    font-size: 14px;
+    font-weight:bold;
+    letter-spacing: 1em;
+    cursor: pointer;
+    color: #fff;
+    border:transparent;
+    filter:alpha(opacity=90);  /*IE6/7/8*/
+}

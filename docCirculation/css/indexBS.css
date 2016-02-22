@@ -1,0 +1,348 @@
+@charset "UTF-8";
+/*头部*/
+.header {
+    height: 65px;
+    background-color: #006AAD;
+    padding:0 20px;
+}
+
+/*侧边栏*/
+.sidebar {
+    position: absolute;
+    top:65px;
+    bottom:0;
+    left:0;
+    width: 200px;
+    background-color: #006AAD;
+    color: #fff;
+    overflow-y: auto;
+    border-right: 1px solid #bebebe;
+}
+.oaSys {
+    padding:10px 20px;
+    background-color: #DA852B;
+    font-weight:bold;
+    cursor: pointer;
+}
+.oaSys img {
+    margin-right:5px;
+}
+.oaSys .glyphicon {
+    font-size:10px;
+    margin-left:30px;
+}
+.menu li {
+    cursor: pointer;
+}
+.menu>li div {
+    padding:10px 10px 10px 30px;
+    border-bottom:1px solid #00629F;
+}
+.menu>li div.on {
+    background-color: #014574;
+}
+.menu>li .glyphicon {
+    margin-right:10px;
+}
+.menu>li .glyphicon-menu-down, .menu>li .glyphicon-menu-right {
+    font-size:12px;
+    color: #91ADC2;
+}
+.menu .subMenu li {
+    padding:10px 50px;
+    border-bottom:1px solid #E0EAE0;
+    background-color: #E9EFF1;
+    color: #000;
+    font-size:12px;
+}
+.menu .subMenu li:hover {
+    background: #da852b;
+    color: #fff;
+}
+
+
+/*主体-内容*/
+.content {
+    position: absolute;
+    top: 65px;
+    right:0;
+    bottom:0;
+    left: 200px;
+}
+/*内容标题*/
+.contentTitle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 15px;
+    font-weight: bold;
+    background-color: #fff;
+    border-bottom: 1px solid #BEBEBE;
+}
+
+/*主体内容*/
+.contentBody {
+    position: absolute;
+    top: 41px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: auto;
+}
+
+/*公文查询表单*/
+.docQuery {
+    padding: 15px 30px 0 30px;
+    min-width: 824px;
+    font-size: 12px;
+    overflow: hidden;
+}
+.docQuery .form-inline,
+.docQuery .form-group {
+    margin-bottom:10px;
+}
+.docQuery .has-feedback .startDate,
+.docQuery .has-feedback .endDate{
+    position: absolute;
+}
+.docQuery .has-feedback .startDate {
+    top: 8px;
+    left: 210px;
+}
+.docQuery .has-feedback .endDate {
+    top: 8px;
+    left: 390px;
+}
+.docQuery .form-inline input[type="text"] {
+    width:345px;
+    margin-right:30px;
+}
+#datetimepicker1,
+#datetimepicker2{
+    width:168px;
+    margin-right:0;
+}
+
+.form-inline .form-control {
+    max-width:345px;
+    min-width:168px;
+    display: inline-block;
+}
+.form-group select {
+    margin-right:10px;
+}
+.form-inline button {
+    margin-right:5px;
+
+}
+.form-inline button:first-letter {
+    letter-spacing: 2em;
+}
+.list {
+    font-size:0;  /*处理行内-块级元素之间的空格*/
+    min-width:824px;
+    border-top: 1px solid #bebebe;
+}
+.list-group {
+    margin: 0;
+    padding:8px 30px;
+    background-color: #eee;
+    border-bottom:3px solid #1FB5AD;
+}
+.list-group-item {
+    padding:0;
+    background-color: #eee;
+    border:none;
+    border-right:1px solid #c8c8c8;
+}
+.list-group-item span {
+    margin-right:5px;
+}
+.list-group-item:last-child {
+    border-right: none;
+}
+.list-group-item a {
+    display: inline-block;
+    padding:8px 25px;
+    color: #000;
+    font-size:12px;
+    cursor: pointer;
+    border-radius:3px;
+}
+.list-group-item a.active, .list-group-item a:hover {
+    background-color: #c8c8c8;
+}
+.list-inline>li {
+    padding:0 5px;
+    font-size: 16px; /*处理行内-块级元素之间的空格*/
+}
+.noneBorder {
+    border-right: none;
+}
+.tableInfo .table-responsive {
+    min-width: 824px;
+    margin-bottom: 0;
+    border:none;
+}
+.tableInfo .table {
+    margin:0;
+}
+.tableInfo .table>tbody>tr>td, .tableInfo .table>tbody>tr>th {
+    text-align: center;
+    vertical-align: middle;
+    font-size:12px;
+    padding:0;
+}
+.tableInfo .table>tbody>tr>th {
+    border-top:none;
+    height:35px;
+    position: relative;
+}
+.tableInfo .table th .thDivider {
+    position: absolute;
+    right: 0;
+    font-weight: normal;
+}
+.tableInfo .table>tbody>tr>td {
+    height:30px;
+    border-top:2px solid #fff;
+    background-color: #e3e9e9;
+}
+.tableInfo .table>tbody>tr>td.even {
+    background-color: #EDF1F3;
+}
+.tableInfo .table>tbody>tr>td a {
+    cursor: pointer;
+}
+
+/*底部页面信息*/
+.pageInfo {
+    text-align: right;
+    padding: 10px 30px;
+    font-size: 12px;
+    min-width: 824px;
+}
+.pageInfo input {
+    width: 40px;
+    height: 18px;
+    text-align: center;
+    margin: 0 5px;
+}
+.pageInfo span {
+    margin:0 5px;
+}
+.pageInfo button {
+    margin:0 5px;
+}
+
+/*添加公文一级模态框*/
+#modal1 {
+    font-size:12px;
+}
+#modal1 .modal-dialog {
+    width:700px;
+}
+#modal1 .modal-title small {
+    font-size:12px;
+    color: #FF992B;
+}
+.modal .modal-body {
+    padding: 0;
+    margin:15px;
+    position: relative;
+}
+#modal1 .modal-body .has-feedback .form-control-feedback {
+    top: 0;
+}
+#modal1 .modal-body .form-group-sm {
+    margin:5px 20px;
+}
+span.star {
+    color: #f00;
+    font-weight: 900;
+    font-size: 14px;
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    position: relative;
+    top: 3px;
+}
+#modal1 .table-bordered>tbody>tr>th {
+    vertical-align: middle;
+    text-align: center;
+    background-color: #f8f8f8;
+    font-weight:normal;
+}
+#modal1 .table>tbody>tr>td,
+#modal1 .table>tbody>tr>th {
+    padding:0;
+}
+
+/*查看公文信息模态框*/
+#modal2 .docTitle {
+    margin-bottom: 15px;
+
+}
+#modal2 .docInfo {
+    font-size:12px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    padding-bottom:10px;
+    margin-bottom:10px;
+}
+#modal2 .docInfo div {
+    display: inline-block;
+    margin-right:40px;
+}
+#modal2 .docContent {
+    font-size:12px;
+}
+
+/*添加公文-添加公文传阅人二级模态框*/
+#modal3 .modal-dialog {
+    width:500px;
+    margin: 90px auto;
+}
+#modal3 .modalLeft,#modal3 .modalRight {
+    padding:0;
+    border:1px solid #ccc;
+    height:300px;
+}
+#modal3 .modalLeftTitle,#modal3 .modalRightTitle {
+    background-color: #efefef;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    height:35px;
+    line-height:35px;
+    padding-left: 10px;
+}
+#modal3 .modalLeftContent,#modal3 .modalRightContent {
+    height:265px;
+    overflow: auto;
+}
+#modal3 .select a {
+    display: block;
+    padding:5px 10px;
+    font-size:12px;
+    color: #000;
+    cursor: pointer;
+}
+#modal3 .select a.choose {
+    background-color: #5BC0DE !important;
+}
+#modal3 .select a:nth-child(even) {
+    background-color: #f4f4f4;
+}
+#modal3 .select a:hover {
+    background-color: #ccc;
+}
+#modal3 .modalMiddle {
+    height:300px;
+    padding-top:120px;
+}
+#modal3 .modalMiddle button {
+    margin-bottom:10px;
+}
+
+

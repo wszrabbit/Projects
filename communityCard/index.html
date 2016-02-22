@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,Chrome=1"/>
+    <title>社区积分卡</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv-3.7.3.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <script src="js/ie8_getEBCN.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="sidebar">
+        <div class="home">
+            <i class="ico_home"><img src="images/ico_home.png" alt="home"/></i>社区积分卡
+        </div>
+        <ul class="menu">
+            <li>
+                <div class="subTitle">居民管理<span class="arrowR"></span></div>
+                <ul class="subMenu hide">
+                    <li>居民管理1</li>
+                    <li>居民管理2</li>
+                    <li>居民管理3</li>
+                </ul>
+            </li>
+            <li>
+                <div class="subTitle">活动管理<span class="arrowD"></span></div>
+                <ul class="subMenu">
+                    <li class="on">活动信息</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="contentTitle">活动信息</div>
+        <div class="contentBody">
+            <div class="infoQuery">
+                <div>
+                    <label for="actName">活动名称：</label>
+                    <input type="text" id="actName"/>
+                </div>
+                <div>
+                    <label for="status">当前状态：</label>
+                    <select name="status" id="status">
+                        <option value="1">全部</option>
+                        <option value="2">进行</option>
+                        <option value="3">结束</option>
+                        <option value="4">筹备</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="actClassify">活动分类：</label>
+                    <select name="actClassify" id="actClassify">
+                        <option value="1">全部</option>
+                        <option value="2">活1</option>
+                        <option value="3">活2</option>
+                        <option value="4">活3</option>
+                    </select>
+                </div>
+                <br />
+                <div>
+                    <button type="submit" class="btnQry"><img src="images/ico_search.png" alt="search"/>查询</button>
+                    <button type="reset" class="btnReset"><img src="images/ico_reset.png" alt="reset"/>重置</button>
+                </div>
+            </div>
+            <div class="queryResult">
+                <table>
+                    <tr>
+                        <th width="20%">活动名称<span class="thDivider">|</span></th>
+                        <th width="10%">当前状态<span class="thDivider">|</span></th>
+                        <th width="15%">活动时间<span class="thDivider">|</span></th>
+                        <th width="10%">活动地点<span class="thDivider">|</span></th>
+                        <th width="8%">名额<span class="thDivider">|</span></th>
+                        <th width="8%">签到<span class="thDivider">|</span></th>
+                        <th width="29%">操作</th>
+                    </tr>
+                    <tr>
+                        <td>校园文化社区</td>
+                        <td class="even">结束</td>
+                        <td>2015-12-30 23:59</td>
+                        <td class="even">厦门思明区</td>
+                        <td>0</td>
+                        <td class="even">8</td>
+                        <td>
+                            <span>查看</span>
+                            <span>下载签到二维码</span>
+                            <span>照片回顾</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>美丽厦门，共同缔造</td>
+                        <td class="even">结束</td>
+                        <td>2015-12-30 23:59</td>
+                        <td class="even">厦门思明区</td>
+                        <td>0</td>
+                        <td class="even">8</td>
+                        <td>
+                            <span>查看</span>
+                            <span>下载签到二维码</span>
+                            <span>照片回顾</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>台湾问题</td>
+                        <td class="even">结束</td>
+                        <td>2015-12-30 23:59</td>
+                        <td class="even">厦门思明区</td>
+                        <td>0</td>
+                        <td class="even">5</td>
+                        <td>
+                            <span>查看</span>
+                            <span>下载签到二维码</span>
+                            <span>照片回顾</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>瑜伽</td>
+                        <td class="even">进行</td>
+                        <td>2015-12-30 23:59</td>
+                        <td class="even">厦门思明区</td>
+                        <td>0</td>
+                        <td class="even">2</td>
+                        <td>
+                            <span>查看</span>
+                            <span>下载签到二维码</span>
+                            <span>照片回顾</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>微型金融与小微企业</td>
+                        <td class="even">筹备</td>
+                        <td>2015-12-30 23:59</td>
+                        <td class="even">厦门思明区</td>
+                        <td>0</td>
+                        <td class="even">6</td>
+                        <td>
+                            <span>查看</span>
+                            <span>下载签到二维码</span>
+                            <span>照片回顾</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="even">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="even">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="even">&nbsp;</td>
+                        <td>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="even">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="even">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="even">&nbsp;</td>
+                        <td>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="even">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="even">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="even">&nbsp;</td>
+                        <td>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="even">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="even">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="even">&nbsp;</td>
+                        <td>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="even">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="even">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="even">&nbsp;</td>
+                        <td>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" class="pageTo">
+                            <form action="" method="post">
+                                <label for="page">共有1条信息 | 每页显示</label>
+                                <input type="text" id="page" value="10"/>条
+                                <button class="btnLeft"></button>
+                                <button class="btnLeft1"></button>
+                                <input type="text" value="1/1"/>页
+                                <button class="btnRight1"></button>
+                                <button class="btnRight"></button>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

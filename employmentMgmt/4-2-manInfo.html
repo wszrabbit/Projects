@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,Chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>人员管理-人员信息</title>
+
+    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/datetimepicker/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="lib/qlTree/qlTree.css">
+    <link rel="stylesheet" href="styles/css/base.css">
+    <link rel="stylesheet" href="styles/css/4-2-manInfo.css">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="lib/html5shiv/html5shiv-3.7.3.min.js"></script>
+    <script type="text/javascript" src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="content-box">
+    <div class="cb-sidebar">
+        <div id="qlTree"></div>
+    </div>
+    <div class="cb-content">
+        <div class="cc-top">
+            <h3><a href="4-1-manMgmt.html">人员管理</a><span class="glyphicon glyphicon-menu-right"></span>人员信息</h3>
+        </div>
+        <div class="cc-main">
+            <div class="cm-box">
+                <ul class="tabs clearfix" role="tablist">
+                    <li role="presentation" class="active"><a href="#audit" aria-controls="audit" role="tab" data-toggle="tab">户籍居民信息审核</a></li>
+                    <li role="presentation"><a href="#resume" aria-controls="man" role="tab" data-toggle="tab">居民简历</a></li>
+                    <li role="presentation"><a href="#record" aria-controls="record" role="tab" data-toggle="tab">就业推荐历史记录</a></li>
+                    <li role="presentation"><a href="#recommend" aria-controls="recommend" role="tab" data-toggle="tab" style="border-right: 1px solid #797979;">培训推荐及结果历史记录</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="audit">
+                        <div class="form-box">
+                            <div class="clearfix">
+                                <div class="fr">
+                                    <a class="btn btn-sm btn-orange" data-toggle="modal" data-target="#modal-audit">审核</a>
+                                    <a class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-112Table">居民112表</a>
+                                    <a class="btn btn-sm btn-lightBlue" data-toggle="modal" data-target="#modal-detailInfo">居民详情</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-box-title"></div>
+                        <div class="form-box">
+                            <div class="clearfix">
+                                <div class="form-item">
+                                    <label style="min-width: 0;">姓名：</label>
+                                    <span class="fn">卢化</span>
+                                </div>
+                                <div class="form-item">
+                                    <label>身份证号：</label>
+                                    <span class="fn">350600198101010015</span>
+                                </div>
+                                <div class="form-item">
+                                    <label>户籍地址：</label>
+                                    <span class="fn">湖里区南山路98号</span>
+                                </div>
+                                <div class="form-item">
+                                    <label>112登记状态：</label>
+                                    <span class="fn">待登记</span>
+                                </div>
+                                <div class="form-item">
+                                    <label>112人员身份：</label>
+                                    <span class="fn">失业人员</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-box">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th></th>
+                                    <th>112表登记情况<br/>（就业管理系统）</th>
+                                    <th>居民当前登记情况<br/>（湖里人才网）</th>
+                                    <th>居民申请修改情况<br/>（湖里人才网）</th>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">联系电话</th>
+                                    <td class="bg-blue"></td>
+                                    <td>13458909094</td>
+                                    <td class="red">137990909300</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">就业意向</th>
+                                    <td>企业正规就业</td>
+                                    <td>企业正规就业</td>
+                                    <td>企业正规就业</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">意向工种</th>
+                                    <td>厨师</td>
+                                    <td>厨师</td>
+                                    <td>厨师</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">工作地点要求</th>
+                                    <td>不限</td>
+                                    <td>不限</td>
+                                    <td class="red">本区</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">培训工种</th>
+                                    <td class="bg-blue">调酒师，化妆师</td>
+                                    <td>调酒师</td>
+                                    <td>调酒师</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">创业意愿</th>
+                                    <td>无</td>
+                                    <td>无</td>
+                                    <td>无</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="resume">
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="record">
+                        <div class="form-box">
+                            <div class="clearfix">
+                                <div class="form-item">
+                                    <label style="min-width: 0;">姓名：</label>
+                                    <span class="fn">卢莉</span>
+                                </div>
+                                <div class="form-item">
+                                    <label>身份证号：</label>
+                                    <span class="fn">350600198101010015</span>
+                                </div>
+                                <div class="form-item">
+                                    <label>户籍地址：</label>
+                                    <span class="fn">湖里区南山路98号</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-box">
+                            <div id="tb-info"></div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="recommend">
+                        <div class="form-box">
+                            <div class="clearfix">
+                                <div class="form-item">
+                                    <label style="min-width: 0;">姓名：</label>
+                                    <span class="fn">卢莉</span>
+                                </div>
+                                <div class="form-item">
+                                    <label>身份证号：</label>
+                                    <span class="fn">350600198101010015</span>
+                                </div>
+                                <div class="form-item">
+                                    <label>户籍地址：</label>
+                                    <span class="fn">湖里区南山路98号</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-box">
+                            <div id="tb-info1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- 审核模态框 -->
+<div class="modal fade" id="modal-audit" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">审核</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-box">
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>
+                                <span class="star">*</span>
+                                审核结果：
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <label class="radio-inline">
+                                <input type="radio" name="auditResult"> 审核通过
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <label class="radio-inline">
+                                <input type="radio" name="auditResult"> 审核不通过
+                            </label>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>
+                                <span class="star">*</span>
+                                审核意见：
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <textarea rows="3" class="form-control" style="width: 400px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">确认</button>
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 居民112表模态框 -->
+<div class="modal fade" id="modal-112Table" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">居民112表</h4>
+            </div>
+            <div class="modal-body">
+                打开居民就业调查112表
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">确认</button>
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 居民详情模态框 -->
+<div class="modal fade" id="modal-detailInfo" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">居民详情</h4>
+            </div>
+            <div class="modal-body">
+                打开居民详情页面
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">确认</button>
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="lib/jQuery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/placeholder/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="lib/datetimepicker/jquery.datetimepicker.js"></script>
+<script type="text/javascript" src="lib/artTemplate/template-simple.js"></script>
+<script type="text/javascript" src="lib/ulynlist/ulynlist.js"></script>
+<script type="text/javascript" src="lib/ulynlist/ulynlist.table.js"></script>
+<script type="text/javascript" src="lib/ulynlist/ulynlist.pagebar.js"></script>
+<script type="text/javascript" src="lib/qlTree/qlTree.js"></script>
+<script type="text/javascript" src="js/4-1-manMgmt.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+</body>
+</html>

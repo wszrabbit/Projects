@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,Chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>培训管理-发布/编辑培训课程</title>
+
+    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/datetimepicker/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="lib/qlTree/qlTree.css">
+    <link rel="stylesheet" href="styles/css/base.css">
+    <link rel="stylesheet" href="styles/css/3-2-pub_editTrain.css">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="lib/html5shiv/html5shiv-3.7.3.min.js"></script>
+    <script type="text/javascript" src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="content-box">
+    <div class="cb-sidebar">
+        <div id="qlTree"></div>
+    </div>
+    <div class="cb-content">
+        <div class="cc-top">
+            <h3><a href="3-1-trainMgmt.html">培训管理</a><span class="glyphicon glyphicon-menu-right"></span>发布/编辑培训课程</h3>
+        </div>
+        <div class="cc-main">
+            <div class="cm-box">
+                <div class="form-box">
+                    <div class="clearfix">
+                        <div class="fr">
+                            <a class="btn btn-sm btn-blue" href="3-1-trainMgmt.html">发布</a>
+                            <a class="btn btn-sm btn-gray" href="3-1-trainMgmt.html">取消</a>
+                            <a class="btn btn-sm btn-orange" data-toggle="modal" data-target="#modal-audit">审核</a>
+                            <a class="btn btn-sm btn-success" data-toggle="modal" data-target="#modal-weixin">微信发布</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-box-title">
+                    <h4 class="fb">培训信息</h4>
+                </div>
+                <div class="form-box">
+                    <div class="clearfix">
+                        <label style="margin-top: 5px;">
+                            <span class="star">*</span>
+                            培训课程：
+                        </label>
+                        <div class="form-item-inline">
+                            <input type="text" class="form-control input-sm">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>
+                            <span class="star">*</span>
+                            培训内容：
+                        </label>
+                        <div class="form-item-inline">
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>
+                                <span class="star">*</span>
+                                培训工种：
+                            </label>
+                            <select class="form-control input-sm">
+                                <option value="培训工种1">培训工种1</option>
+                            </select>
+                        </div>
+                        <div class="form-item-fr">
+                            <label>
+                                <span class="star">*</span>
+                                培训方式：
+                            </label>
+                            <input type="text" class="form-control input-sm">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>
+                                <span class="star">*</span>
+                                培训时间：
+                            </label>
+                            <input type="text" class="form-control input-sm input-xs date">
+                            -
+                            <input type="text" class="form-control input-sm input-xs date">
+                        </div>
+                        <div class="form-item-fr">
+                            <label>
+                                <span class="star">*</span>
+                                培训地点：
+                            </label>
+                            <input type="text" class="form-control input-sm input-xxs">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>
+                                <span class="star">*</span>
+                                培训人数：
+                            </label>
+                            <input type="text" class="form-control input-sm">
+                        </div>
+                        <div class="form-item-fr">
+                            <label>
+                                <span class="star">*</span>
+                                培训费用：
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="train-cost"> 免费
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="train-cost"> 收费
+                            </label>
+                            <input type="text" class="form-control input-sm input-xs">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>
+                                <span class="star">*</span>
+                                开班方式：
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="open-way"> 区就业中心开班
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="open-way"> 街道开班
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="open-way"> 插班培训
+                            </label>
+                        </div>
+                        <div class="form-item-fr">
+                            <label>
+                                <span class="star">*</span>
+                                报名方式：
+                            </label>
+                            <input type="text" class="form-control input-sm">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>
+                                <span class="star">*</span>
+                                主办单位：
+                            </label>
+                            <input type="text" class="form-control input-sm">
+                        </div>
+                        <div class="form-item-fr">
+                            <div class="form-item">
+                                <label>
+                                    <span class="star">*</span>
+                                    联系人：
+                                </label>
+                                <input type="text" class="form-control input-sm input-xs">
+                            </div>
+                            <div class="form-item">
+                                <label>
+                                    <span class="star">*</span>
+                                    联系方式：
+                                </label>
+                                <input type="text" class="form-control input-sm input-xs">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-box-title">
+                    <h4 class="fb">岗位要求</h4>
+                </div>
+                <div class="form-box">
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>
+                                性别要求：
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="gender"> 不限
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="gender"> 男
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="gender"> 女
+                            </label>
+                        </div>
+                        <div class="form-item-fr">
+                            <label>
+                                年龄要求：
+                            </label>
+                            <input type="text" class="form-control input-sm input-xs" placeholder="不限">
+                            -
+                            <input type="text" class="form-control input-sm input-xs" placeholder="不限">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>
+                                文化程度：
+                            </label>
+                            <select class="form-control input-sm input-xs">
+                                <option>不限</option>
+                                <option>小学以上（含小学）</option>
+                                <option>中学</option>
+                            </select>
+                            -
+                            <select class="form-control input-sm input-xs">
+                                <option>不限</option>
+                                <option>小学以上（含小学）</option>
+                                <option>中学</option>
+                            </select>
+                        </div>
+                        <div class="form-item-fr">
+                            <label>
+                                户口要求：
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="requirement"> 不限
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="requirement"> 本区户籍
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="requirement"> 本市户籍
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="requirement"> 外地户籍
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- 审核模态框 -->
+<div class="modal fade" id="modal-audit" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">审核</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-box">
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>
+                                <span class="star">*</span>
+                                审核结果：
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <label class="radio-inline">
+                                <input type="radio" name="auditResult"> 审核通过
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <label class="radio-inline">
+                                <input type="radio" name="auditResult"> 审核不通过
+                            </label>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>
+                                <span class="star">*</span>
+                                审核意见：
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <textarea rows="3" class="form-control" style="width: 400px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">确认</button>
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 微信模态框 -->
+<div class="modal fade" id="modal-weixin" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-tabs">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#weixinPlatform" aria-controls="weixinPlatform"
+                                                              role="tab"
+                                                              data-toggle="tab">微信平台</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="weixinPlatform">
+                        <div class="form-box">
+                            <div class="clearfix">
+                                <div class="form-item">
+                                    <label>
+                                        菜单栏目：
+                                    </label>
+                                </div>
+                                <div class="form-item">
+                                    <select class="form-control input-sm input-xs">
+                                        <option value="居民服务" selected>居民服务</option>
+                                    </select>
+                                </div>
+                                <div class="form-item">
+                                    <select class="form-control input-sm input-xs">
+                                        <option value="培训通知" selected>培训通知</option>
+                                    </select>
+                                </div>
+                                <div class="form-item">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"> 使用外部链接
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="form-item">
+                                    <label>
+                                        标题图片：
+                                    </label>
+                                </div>
+                                <div class="form-item">
+                                    <a role="button" class="btn btn-default btn-sm"><span
+                                            class="glyphicon glyphicon-upload"></span>点击上传</a>
+                                </div>
+                            </div>
+                            <div class="clearfix" style="margin-bottom: 0;">
+                                <div class="form-item">
+                                    <label>
+                                        <span class="star">*</span>
+                                        文章简介：
+                                    </label>
+                                </div>
+                                <div class="form-item-fr">
+                                    字数限制
+                                    <span class="red">100</span>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <textarea class="form-control"></textarea>
+                            </div>
+                            <div class="clearfix">
+                                <div class="form-item" style="margin-right: 0;">
+                                    <label>
+                                        <span class="star">*</span> 封面大图：
+                                    </label>
+                                </div>
+                                <div class="form-item">
+                                    <a role="button" class="btn btn-default btn-sm"><span
+                                            class="glyphicon glyphicon-upload"></span>点击上传</a>
+                                </div>
+                            </div>
+                            <div class="clearfix" style="margin-bottom: 0;">
+                                <div class="form-item">
+                                    <label>
+                                        文章链接url：
+                                        <span class="red">（同内容为二选一必填）</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <textarea class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer tl">
+                <button type="button" class="btn btn-blue btn-sm" data-dismiss="modal">发布</button>
+                <button type="button" class="btn btn-gray btn-sm" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="lib/jQuery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/datetimepicker/jquery.datetimepicker.js"></script>
+<script type="text/javascript" src="lib/placeholder/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="lib/artTemplate/template-simple.js"></script>
+<script type="text/javascript" src="lib/ulynlist/ulynlist.js"></script>
+<script type="text/javascript" src="lib/ulynlist/ulynlist.table.js"></script>
+<script type="text/javascript" src="lib/ulynlist/ulynlist.pagebar.js"></script>
+<script type="text/javascript" src="lib/qlTree/qlTree.js"></script>
+<script type="text/javascript" src="js/3-1-trainMgmt.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+</body>
+</html>

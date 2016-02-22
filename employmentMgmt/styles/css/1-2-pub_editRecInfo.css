@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+.form-box {
+    position: relative;
+    padding-right: 120px;
+}
+.form-box .form-item {
+    margin-right: 0;
+}
+.form-box .clearfix {
+    position: relative;
+    margin-bottom: 10px;
+}
+.form-box  label {
+    float: left;
+    margin-right: 10px;
+    min-width: 91px;
+    height: 30px;
+    line-height: 30px;
+}
+.form-box .checkbox-inline,
+.form-box .radio-inline {
+    min-width: 0;
+}
+.form-box .form-item-inline,
+.form-box .form-item-height {
+    position: relative;
+    margin-left: 101px;
+}
+
+
+.form-box .form-item-fr .radio-inline {
+    margin-right: 25px;
+}
+
+.form-box .form-item .form-control,
+.form-box .form-item-fr .form-control {
+    display: inline-block;
+    width: 220px;
+}
+.form-box .form-item .input-xxs{
+    width: 35px;
+}
+.form-box .form-item-fr .input-xs,
+.form-box .form-item .input-xs{
+    width: 101px
+}
+.form-box .form-item-fr .input-s,
+.form-box .form-item .input-s{
+    width: 172px
+}
+
+/*日期输入框背景*/
+.date {
+    background: #fff url("../../images/ico_date.png") no-repeat 80px center;
+}
+
+/*招聘列表按钮*/
+.form-box .recruitList {
+    position: absolute;
+    top: 0;
+    right: -87px;
+    padding: 5px 10px;
+}
+/*招聘列表tooltip*/
+.tooltip-box {
+    top: 50px;
+    right: -87px;
+    width: 300px;
+}
+.tooltip-box .tooltip-header {
+    padding-bottom: 10px;
+}
+/*招聘列表tooltip向上箭头*/
+.tooltip-box:before, .tooltip-box:after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #fff;
+}
+.tooltip-box:before{
+    top: -21px;
+    border-bottom-color: #00f;
+}
+.tooltip-box .tooltip-body table>tbody>tr>td,
+.tooltip-box .tooltip-body table>tbody>tr>th{
+    text-align: center;
+}
+.tooltip-box .tooltip-body table>tbody>tr>th,
+.tooltip-box .tooltip-body table>tbody>tr>td{
+    border-right: 1px dashed #aaa;
+}
+
+/*专场招聘tooltip*/
+.tooltip-box1 {
+    top: 40px;
+    left: 200px;
+}
+/*专场招聘tooltip向上箭头*/
+.tooltip-box1:before, .tooltip-box1:after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #fff;
+}
+.tooltip-box1:before{
+    top: -21px;
+    border-bottom-color: #00f;
+}
+

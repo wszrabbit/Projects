@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,Chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>招聘会管理</title>
+
+    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/datetimepicker/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="lib/qlTree/qlTree.css">
+    <link rel="stylesheet" href="styles/css/base.css">
+    <link rel="stylesheet" href="styles/css/2-1-recFairMgmt.css">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="lib/html5shiv/html5shiv-3.7.3.min.js"></script>
+    <script type="text/javascript" src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="content-box">
+    <div class="cb-sidebar">
+        <div id="qlTree"></div>
+    </div>
+    <div class="cb-content">
+        <div class="cc-top">
+            <h3>招聘会管理</h3>
+        </div>
+        <div class="cc-main">
+            <div class="cm-box">
+                <div class="form-box">
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>审核状态：</label>
+                            <span class="label labelCur">不限</span>
+                            <span class="label">待审核</span>
+                            <span class="label">审核通过</span>
+                            <span class="label">审核不通过</span>
+                        </div>
+                        <div class="form-item">
+                            <label>招聘会状态：</label>
+                            <span class="label labelCur">未开始</span>
+                            <span class="label">进行中</span>
+                            <span class="label">已结束</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <select class="form-control input-sm">
+                                <option value="招聘会类型" selected>招聘会类型</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <input type="text" class="form-control input-sm date" placeholder="招聘会日期1">
+                            至
+                            <input type="text" class="form-control input-sm date" placeholder="招聘会日期2">
+                        </div>
+                        <div class="form-item">
+                            <input type="text" class="form-control input-sm" placeholder="招聘会名称">
+                        </div>
+                        <div class="form-item">
+                            <a role="button" class="btn btn-success btn-sm">查询</a>
+                            <a role="button" class="btn btn-info btn-sm">重置</a>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <a class="btn btn-sm btn-lightBlue" href="2-2-pub_editRecFair.html">发布招聘会</a>
+                            <a class="btn btn-sm btn-orange"  data-toggle="modal" data-target="#modal-audit">批量审核</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-box">
+                    <div id="tb-info" class="has-tooltip"></div>
+                    <div id="tb-pageBar"></div>
+                    <!--招聘会名称tooltip-->
+                    <div class="tooltip-box" style="display: none;">
+                        <div class="tooltip-main">
+                            <div class="tooltip-header">
+                                <h3 class="fb">厦门市湖里区服务企业用工专场招聘会（已审核）</h3>
+                                <p class="tr">2015年第01期</p>
+                            </div>
+                            <div class="tooltip-body">
+                                <table>
+                                    <tbody>
+                                    <tr>
+                                        <td><label>招聘会类型：</label><span>常规专场</span></td>
+                                        <td><label>填报单位：</label><span>湖里区职业介绍服务中心</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>主办单位：</label><span>湖里区劳动就业管理中心</span></td>
+                                        <td><label>承办单位：</label><span>湖里区职业介绍服务中心</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>举办城市：</label><span>厦门市</span></td>
+                                        <td><label>举办场所：</label><span>湖里区人力资源市场 二层</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>填表日期：</label><span>2015-12-22</span></td>
+                                        <td><label>招聘日期：</label><span>2015-12-31</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>服务网店：</label><span>厦门市湖里区</span></td>
+                                        <td><label>分中心：</label><span>湖里区</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>联系人：</label><span>小黄</span></td>
+                                        <td><label>联系电话：</label><span>538712231</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><label>联系地址：</label>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><label>招聘会介绍：</label>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><label>招聘会主题：</label>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- 审核模态框 -->
+<div class="modal fade" id="modal-audit" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">招聘会审核</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-box">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th width="45%">招聘会名称</th>
+                            <th width="25%">审核结果</th>
+                            <th width="30%">审核意见</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <label class="radio-inline">
+                                    <input type="radio" name="audit-result"> 通过
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="audit-result"> 不通过
+                                </label>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <label class="radio-inline">
+                                    <input type="radio" name="audit-result"> 通过
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="audit-result"> 不通过
+                                </label>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-blue btn-sm" data-dismiss="modal">确认</button>
+                <button type="button" class="btn btn-gray btn-sm" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="lib/jQuery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/datetimepicker/jquery.datetimepicker.js"></script>
+<script type="text/javascript" src="lib/placeholder/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="lib/artTemplate/template-simple.js"></script>
+<script type="text/javascript" src="lib/ulynlist/ulynlist.js"></script>
+<script type="text/javascript" src="lib/ulynlist/ulynlist.table.js"></script>
+<script type="text/javascript" src="lib/ulynlist/ulynlist.pagebar.js"></script>
+<script type="text/javascript" src="lib/qlTree/qlTree.js"></script>
+<script type="text/javascript" src="js/2-1-recFairMgmt.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+</body>
+</html>

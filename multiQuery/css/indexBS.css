@@ -1,0 +1,297 @@
+@charset "UTF-8";
+/*侧边栏*/
+.sidebar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    background-color: #e5e6e8;
+}
+.pageTitle {
+    color: #125683;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.pageTitle img {
+    margin-right: 5px;
+}
+
+/*侧边栏菜单*/
+.sidebar .menu {
+    position: absolute;
+    top: 42px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    border-right: 1px solid #DFE0E0;
+}
+.sidebar .menu>li {
+    background-color: #DCDDDF;
+}
+.sidebar .menu div {
+    color:#125683;
+    font-size: 16px;
+    padding: 10px 10px;
+}
+.sidebar .menu div span {
+    font-size:16px;
+    margin-right: 10px;
+    color: #105481;
+}
+.sidebar .menu div.on {
+    background-color: #C7D0D7;
+}
+.sidebar .subMenu li {
+    padding: 10px 30px;
+    background-color: #e5e6e8;
+}
+.sidebar .subMenu li.on,
+.sidebar .subMenu li:hover {
+    background-color: #D2D6D9;
+    border-right: 3px solid #0E7999;
+}
+
+/*主体内容*/
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 180px;
+}
+
+/*主体内容标题*/
+.content .contentTitle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    background-color: #F4F6F5;
+    color: #155884;
+}
+
+/*主体内容主体*/
+.content .contentBody {
+    position: absolute;
+    top: 42px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*查询*/
+.infoQuery {
+    margin:10px 20px 0 20px;
+    min-width: 804px;
+}
+.infoQuery .glyphicon {
+    margin-right:5px;
+}
+.infoQuery .form-group,
+.advQuery .form-group {
+    display: inline-block;
+    margin-bottom: 10px !important;
+    vertical-align: middle;
+}
+.infoQuery .form-group .form-control,
+.advQuery .form-group .form-control {
+    width:130px;
+    margin-right:5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.infoQuery button {
+    margin-right:5px;
+}
+/*箭头*/
+.arrowTip {
+    position: relative;
+}
+.arrowTip:after,
+.arrowTip:before {
+    content: '';
+    width: 0;
+    height:0;
+    position: absolute;
+    top: 22px;
+    border: 6px solid transparent;
+    border-bottom-color: #fff;
+}
+.arrowTip:before {
+    border-bottom-color: #C3CDD8;
+    top: 20px;
+}
+
+/*高级查询*/
+.advQuery {
+    margin: 0 20px 10px 20px;
+    border: 1px solid #C3CDD8;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    min-width: 804px;
+}
+.advQuery .glyphicon {
+    margin: 0 5px;
+}
+.advQuery > div {
+    position: relative;
+    padding-left: 80px;
+}
+.advQuery .lbl-left {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 80px;
+    display: inline-block;
+    text-align: right;
+}
+.advQuery .lineOne {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #ccc;
+    background-color: #F4F4F4;
+}
+.advQuery .lineTwo {
+    padding-top: 5px;
+}
+.advQuery .lineThree button {
+    margin-bottom: 5px;
+}
+.advQuery .form-control {
+    display: inline-block;
+}
+.advQuery select,
+.advQuery input{
+    width:130px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.advQuery .inputLg {
+    width:268px;
+}
+
+
+.advQuery .labelB,
+.advQuery .labelRed {
+    position: relative;
+    background-color: #fff;
+    padding: 3px 20px;
+    color: #000;
+}
+.advQuery .labelRed {
+    border: 1px solid #f00;
+    margin-right: 10px;
+}
+.advQuery .labelB .closeB,
+.advQuery  .labelRed .closeRed {
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+}
+.advQuery .labelRed .closeRed {
+    color: #f00;
+}
+
+/*按钮组*/
+.btnGroup {
+    position: relative;
+    height: 50px;
+    line-height: 45px;
+    padding:0 20px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    background-color: #F4F6F5;
+    min-width: 844px;
+}
+input[type="checkbox"] {
+    vertical-align: middle;
+    cursor: pointer;
+}
+.btnGroup label {
+    vertical-align: middle;
+    font-weight: bold;
+    margin:0 5px;
+}
+.btnGroup button {
+    margin-right:5px;
+}
+.btnGroup .showWay {
+    position: absolute;
+    right: 20px;
+    top:0;
+    bottom:0;
+    text-align: center;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    cursor: pointer;
+}
+.btnGroup .showWay div {
+    display: inline-block;
+    width: 41px;
+    height: 47px;
+    line-height: 47px;
+}
+.btnGroup .showWay .icoTable {
+    border-right:1px solid #ddd;
+}
+.btnGroup .showWay .icoLoca {
+
+}
+
+/*查询结果*/
+.queryResult {
+    position: relative;
+    min-width: 844px;
+}
+.queryResult table {
+
+}
+.queryResult table th {
+    position: relative;
+    height: 35px;
+    background-color: #fff;
+    text-align: center;
+}
+.queryResult table th img {
+    margin-left:5px;
+    cursor: pointer;
+}
+.queryResult table th span {
+    position: absolute;
+    color: #bbb;
+    right: 0;
+}
+.queryResult table tr {
+    border-bottom: 2px solid #fff;
+    background-color: #E2E8E8;
+}
+.queryResult table td {
+    text-align: center;
+    height:40px;
+}
+.queryResult table td.bgColor {
+    background-color: #EDF1F2;
+}
+.queryResult td a {
+    color: #155D8E;
+    cursor: pointer;
+}
+.queryResult td a:hover {
+    text-decoration: none;
+}

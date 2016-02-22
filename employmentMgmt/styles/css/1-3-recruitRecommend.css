@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.form-box-title {
+    padding: 0;
+    margin: 0 10px 10px;
+}
+.form-box .form-item .form-control {
+    display: inline-block;
+    width: 130px;
+}
+
+/*就业推荐表*/
+.table-box .help-info {
+    position: absolute;
+    top: -30px;
+    right: 0;
+}
+.table-box .tb-main {
+    position: relative;
+}
+#tb-info1, #tb-pageBar {
+    margin-right: 100px;
+}
+.table-box .chooseList {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    border: 1px solid #eee;
+}
+.table-box .chooseList li {
+    height: 40px;
+    line-height: 40px;
+}
+.table-box .chooseList .btn {
+    padding: 5px 10px;
+}
+.table-box .chooseList .btn .glyphicon {
+    margin-left: 10px;
+    margin-right: 0;
+}
+

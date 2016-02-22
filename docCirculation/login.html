@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,Chrome=1"/>
+    <title>综治信息平台登录</title>
+    <link rel="stylesheet" href="css/login.css">
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv-3.7.3.min.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="header">
+    <img src="images/login.png" alt="综治信息平台">
+</div>
+<div class="content">
+    <div class="banner">
+        <img src="images/banner.png" alt="">
+    </div>
+    <div class="loginBox">
+        <div class="loginTitle">
+            用户登录
+        </div>
+        <div class="form-group">
+            <div class="form-control">
+                <img src="images/user.png" alt="">
+                <input type="text" placeholder="账号">
+            </div>
+            <div class="form-control">
+                <img src="images/lock.png" alt="">
+                <input type="password" placeholder="密码">
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="remember" value="记住密码"><label for="remember">记住密码</label>
+            </div>
+            <button type="button">登录</button>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.placeholder.min.js"></script>
+<script type="text/javascript">
+    $("input").placeholder();
+</script>
+</body>
+</html>

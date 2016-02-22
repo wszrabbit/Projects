@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+
+.form-box .form-item .form-control {
+    display: inline-block;
+    width: 130px;
+}
+.form-box .form-item label {
+    min-width: 65px
+}
+
+/*tooltip左箭头*/
+.tooltip-box {
+    top: -20px;
+    left: 120px;
+    width: 550px;
+}
+.tooltip-box:before, .tooltip-box:after {
+    content: '';
+    position: absolute;
+    top: 65px;
+    left: -30px;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-right-color: #fff;
+}
+.tooltip-box:before{
+    left: -31px;
+    border-right-color: #00f;
+}
+
+
+.tooltip-box .tooltip-body label {
+    min-width: 90px;
+}
+

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+.clearfix {
+    margin-bottom: 10px;
+}
+.form-box .form-item .form-control {
+    display: inline-block;
+    width: 130px;
+}
+
+#modal-audit label {
+    min-width: 0;
+}
+#modal-audit .radio-inline input[type=radio] {
+    top: -2px;
+}
+#modal-audit .radio-inline {
+    margin-right: 30px;
+}
+#modal-audit .table>tbody>tr>td {
+    vertical-align: middle;
+}

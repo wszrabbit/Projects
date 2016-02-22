@@ -1,0 +1,57 @@
+@charset "UTF-8";
+.form-box {
+    padding: 0 20px;
+}
+.form-box-title {
+    margin: 0 15px 15px;
+}
+.has-legend {
+    position: relative;
+    border: 1px solid #B7BABC;
+    border-radius: 3px;
+    margin: 0 35px 10px;
+    padding: 10px;
+}
+.has-legend .legend {
+    position: absolute;
+    top: -10px;
+    font-weight: bold;
+    padding: 0 5px;
+    background-color: #fff;
+}
+.form-box label {
+    float: left;
+    margin-right: 10px;
+    min-width: 91px;
+    height: 30px;
+    line-height: 30px;
+}
+.form-box .form-item-inline, .form-box .form-item-height {
+    position: relative;
+    margin: 5px 0 5px 101px;
+}
+.form-box .form-item {
+    margin-right: 0;
+}
+.form-box .form-item .form-control,
+.form-box .form-item-fr .form-control {
+    display: inline-block;
+    width: 220px;
+}
+.form-box .form-item .input-xxs{
+    width: 35px;
+}
+.form-box .form-item-fr .input-xs,
+.form-box .form-item .input-xs{
+    width: 101px
+}
+.form-box .form-item-fr .input-s,
+.form-box .form-item .input-s{
+    width: 172px
+}
+.form-box .checkbox-inline, .form-box .radio-inline {
+    min-width: 0;
+}
+.date {
+    background: #fff url("../../images/ico_date.png") no-repeat 190px center;
+}

@@ -1,0 +1,331 @@
+@charset "UTF-8";
+.placeholder {
+    color: #fff;
+}
+
+/*侧边栏*/
+.sidebar {
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width: 180px;
+    height:100%;
+    background-color: #2C3E50;
+    color: #fff;
+}
+/*侧边栏头部搜索*/
+.sidebar .sidebarHead {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+.sidebar .sidebarHead>.glyphicon {
+    font-size:24px;
+    top:7px;
+    margin-right:10px;
+}
+.sidebar .sidebarHead .has-feedback {
+    width: 150px;
+    margin: 30px auto 10px;
+}
+.sidebar .sidebarHead .has-feedback .glyphicon {
+    font-size:12px;
+    cursor: pointer;
+}
+.sidebar .sidebarHead .form-group-sm .form-control {
+    width:150px;
+    color: #fff;
+    background-color: #455464;
+    border: 1px solid transparent;
+}
+/*侧边栏一级菜单*/
+.sidebar .sidebarMenu {
+    position: absolute;
+    top: 120px;
+    bottom: 0;
+    width: 180px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.sidebarMenu li {
+    cursor: pointer;
+}
+.sidebarMenu>li {
+    border-bottom: 1px solid #293847;
+}
+.sidebarMenu div {
+    padding: 10px;
+    position: relative;
+}
+.sidebarMenu div.on {
+    border-right: 5px solid #CA0000;
+    background-color: #0F1D2B;
+}
+.sidebarMenu div i.glyphicon {
+    margin-right: 10px;
+    top:2px;
+}
+.sidebarMenu div span.glyphicon {
+    font-size:12px;
+    position: absolute;
+    right:20px;
+    top:15px;
+}
+/*侧边栏底部按钮*/
+.sidebar .sidebarMenu .btnShowAll {
+    display: inline-block;
+    background-color: #293744;
+    padding: 8px 20px;
+    margin:20px 40px;
+    cursor: pointer;
+}
+/*侧边栏二级菜单*/
+.sidebarMenu .sidebarSubMenu li {
+    padding: 10px 40px;
+    background-color: #2C3E50;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.sidebarMenu .sidebarSubMenu li.on,
+.sidebarMenu .sidebarSubMenu li:hover {
+    background-color: #4C6175;
+}
+
+/*右侧主体内容*/
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 180px;
+    padding-bottom: 20px;
+    background-color: #F0F0F0;
+}
+
+/*标题*/
+.content .currentSite {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    background-color: #E9E9E9;
+
+}
+.content .currentSite .glyphicon {
+    margin: 0 5px;
+    font-size:12px;
+}
+
+/*主题内容*/
+.content .contentBody {
+    position: absolute;
+    top: 65px;
+    bottom: 0;
+    right:0;
+    width: 100%;
+    overflow: auto;
+}
+.content .infoQuery {
+    margin:0 10px;
+    padding:15px 0;
+    background-color: #fff;
+    border:1px solid #ccc;
+    overflow: hidden;
+    min-width:824px;
+}
+.content .infoQuery .form-inline {
+    margin:0 15px 10px 15px;
+}
+.content .infoQuery .form-inline .form-group {
+    display: inline-block;
+    margin-bottom:0;
+    vertical-align: middle;
+}
+.content .infoQuery  label {
+    display: inline-block;
+    width: 80px;
+    margin-bottom:0;
+    font-weight: normal;
+    text-align: right;
+}
+.content .infoQuery .form-inline .keyword {
+    margin-right: 25px;
+    color: #848484;
+}
+.content .infoQuery .form-inline .marginLeft {
+    margin-left: 10px;
+}
+.content .infoQuery .form-inline .form-control {
+    width: 135px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.content .infoQuery .basicCatalog,
+.content .infoQuery .extendCatalog {
+    position: relative;
+    padding-bottom:4px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.content .infoQuery .basicCatalog .deptTag {
+    min-width: 85px;
+    background-color: #BDD4E4;
+    border: none;
+    padding:5px 20px;
+    margin-right:5px;
+    outline:none;
+    position: relative;
+}
+.content .infoQuery .basicCatalog .close {
+    position: absolute;
+    right:3px;
+    top:0;
+    font-weight: normal;
+    text-shadow: none;
+    opacity: 1;
+}
+.content .infoQuery .solidBorderBottom {
+    border-bottom: 1px solid #ccc;
+    margin-bottom:4px;
+}
+.content .infoQuery .btnDisplay {
+    position: absolute;
+    right:0;
+    background-color: #EAEAEA;
+    color: #385C85;
+    outline: none;
+    padding: 4px 10px;
+}
+.content .infoQuery .btnBack:before {
+    content: '收起';
+}
+.content .infoQuery .btnExtend:before {
+    content: '展开';
+}
+.content .infoQuery .btnDisplay .glyphicon {
+    top:2px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.content .infoQuery .extendCatalog {
+    height:37px;
+    line-height:37px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.content .infoQuery .checkboxGroup {
+    margin-left: 95px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+.content .infoQuery .checkboxGroup .dashedBorderBottom {
+    position: relative;
+    border-bottom: 1px dashed #ccc;
+    padding:5px 0;
+    overflow: hidden;
+}
+.content .infoQuery .checkboxGroup input[type="checkbox"] {
+    margin-right:5px;
+    margin-top:0;
+}
+.content .infoQuery .checkboxGroup input[type="checkbox"]+label {
+    text-align: left;
+    width:65px;
+}
+.content .infoQuery .checkboxGroup .showAllDept {
+    position: absolute;
+    right:0;
+    cursor: pointer;
+    color: #154E86;
+    background-color: #fff;
+}
+.content .infoQuery .checkboxGroup .showAllDept .glyphicon {
+    font-size: 14px;
+    margin:0 5px;
+}
+.content .infoQuery .btnGroup {
+    text-align: center;
+    padding: 25px 0;
+}
+.content .infoQuery .btnGroup button {
+    font-size:20px;
+    margin-right:10px;
+}
+.content .infoQuery .btnGroup button .glyphicon {
+    margin-right:15px;
+    top:3px
+}
+
+/*导出资源目录*/
+.content .export {
+    min-width:824px;
+    padding: 5px 15px;
+    text-align: right;
+    margin: 0 10px;
+    background-color: #EAEAEA;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+}
+.content .export button .glyphicon {
+    margin-right:10px;
+}
+
+/*查询结果*/
+.content .queryResult {
+    min-width:824px;
+    margin:0 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.content .queryResult .resultTable {
+    width: 100%;
+    border-collapse:collapse;
+}
+.content .queryResult .resultTable td,
+.content .queryResult table th {
+    text-align: center;
+}
+.content .queryResult .resultTable th {
+    padding:18px 0;
+}
+.content .queryResult .resultTable td {
+    padding:15px 0;
+}
+.content .queryResult .resultTable tr.borderBottom {
+    border-bottom: 1px solid #813434;
+}
+.content .queryResult .resultTable tr.bgColor {
+    background-color: #EAEAEA;
+}
+.content .queryResult .resultTable span.toBeBuild {
+    color:#105F99;
+}
+.content .queryResult .resultTable span.haveBeenBuild {
+    color:#2B830F;
+}
+.content .queryResult .resultTable a {
+    color:#004176;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*页面信息*/
+.content .queryResult .pageInfo {
+    padding:20px 15px 30px;
+    position: relative;
+}
+.content .queryResult .pageInfo button{
+    cursor: default;
+    outline:none;
+}
+.content .queryResult .pageInfo .pageTo {
+    position: absolute;
+    right:15px;
+}

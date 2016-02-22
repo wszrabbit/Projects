@@ -1,0 +1,137 @@
+@charset "utf-8";
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.content-box{
+    width: 100%;
+    height: 100%;
+}
+.cb-sidebar{
+    float:left;
+    left: 0;
+    top: 0;
+    width: 185px;
+    height: 100%;
+    overflow-y:auto;
+    border-right: 1px solid #ccc;
+    background-color: #e5e6e8;
+}
+.cb-sidebar>h3{
+    color: #125683;
+    height: 47px;
+    line-height: 47px;
+    padding-left: 5px;
+}
+.cb-sidebar>h3 img{
+    margin-right: 3px;
+}
+/* 一级菜单 */
+.cb-sidebar #qlTree>ul ul{
+    display: none;
+}
+.cb-sidebar #qlTree a{
+    display: block;
+    cursor: pointer;
+}
+.cb-sidebar #qlTree a:focus,.cb-sidebar #qlTree a:visited{
+    outline: none;
+}
+.cb-sidebar #qlTree>ul{
+    border-top: 1px solid #ccc;
+}
+.cb-sidebar #qlTree>ul>li>a{
+    border-bottom: 1px solid #ccc;
+    background: #dbdede;
+    -moz-user-select:none;
+    position: relative;
+}
+.cb-sidebar #qlTree>ul>li>a:hover{
+    background-color: #c6d1d6;
+}
+.cb-sidebar #qlTree>ul>li>a .i_end{
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    width: 10px;
+    height: 10px;
+    background: url("../../images/ico_narrowed.png") no-repeat;
+}
+.cb-sidebar #qlTree>ul>li.expand>a .i_end{
+    background-image: url("../../images/ico_open.png");
+}
+.cb-sidebar #qlTree>ul>li>a{
+    padding:12px;
+    font-size: 14px;
+    height: 47px;
+    text-decoration: none;
+    color: #3678a4;
+}
+.cb-sidebar #qlTree>ul>li>a:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 26px;
+    height: 26px;
+    background: url("../../images/ico_sqzm_bule.png") no-repeat;
+    margin-right: 10px;
+}
+/* 二级菜单 */
+.cb-sidebar #qlTree>ul>li>ul>li>a{
+    color: #3678a4;
+    font-size: 14px;
+    padding: 10px 18px;
+    border-bottom: 1px solid #ccc;
+}
+.cb-sidebar #qlTree>ul>li>ul>li>a:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background: url("../../images/ico_tb.png") no-repeat;
+    margin-right: 15px;
+}
+.cb-sidebar #qlTree>ul>li>ul>li>a:hover
+,.cb-sidebar #qlTree>ul>li>ul>li.cur>a{
+    background-color: #c6d1d6;
+}
+
+
+/*==== 内容区 ====*/
+.cb-content{
+    margin-left: 185px;
+    height: 100%;
+    position: relative;
+}
+.cb-content .cc-top{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.cb-content .cc-top h3{
+    background: #f4f6f5;
+    border-bottom: 1px solid #dcdedf;
+    color: #125683;
+    font-weight: bold;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 15px;
+}
+.cb-content .cc-main{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 47px;
+    bottom: 0;
+    overflow: auto;
+}
+.cm-box{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}

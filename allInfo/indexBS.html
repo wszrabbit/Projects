@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,Chrome=1"/>
+    <title>发改委全部信息</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="css/indexBS.css">
+    <link rel="stylesheet" href="css/base.css">
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="js/jquery.datetimepicker.js"></script>
+    <script type="text/javascript" src="js/indexBS.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv-3.7.3.min.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="sidebar">
+        <div class="sidebarHead">
+            <span class="glyphicon glyphicon-search"></span>资源搜索
+            <div class="form-group-sm has-feedback">
+                <input type="text" class="form-control" placeholder="搜索">
+                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            </div>
+        </div>
+        <ul class="sidebarMenu" id="menu">
+            <li>
+                <div class="on">
+                    <i class="glyphicon glyphicon-briefcase"></i>发改委<span class="glyphicon glyphicon-menu-down"></span>
+                </div>
+                <ul class="sidebarSubMenu">
+                    <li class="on">全部</li>
+                    <li>业务事项</li>
+                    <li>业务信息</li>
+                    <li>数据架构</li>
+                    <li>应用系统</li>
+                    <li>用户</li>
+                    <li>证照</li>
+                    <li>数据</li>
+                </ul>
+            </li>
+            <li>
+                <div>
+                    <i class="glyphicon glyphicon-briefcase"></i>公安<span class="glyphicon glyphicon-menu-right"></span>
+                </div>
+                <ul class="sidebarSubMenu">
+                    <li>全部</li>
+                    <li>业务事项</li>
+                    <li>业务信息</li>
+                    <li>数据架构</li>
+                    <li>应用系统</li>
+                    <li>用户</li>
+                    <li>证照</li>
+                    <li>数据</li>
+                </ul>
+            </li>
+            <li>
+                <div><i class="glyphicon glyphicon-briefcase"></i>卫计<span class="glyphicon glyphicon-menu-right"></span></div>
+            </li>
+            <li>
+                <div><i class="glyphicon glyphicon-briefcase"></i>发改委<span class="glyphicon glyphicon-menu-right"></span></div>
+            </li>
+            <li>
+                <div><i class="glyphicon glyphicon-briefcase"></i>发改委<span class="glyphicon glyphicon-menu-right"></span></div>
+            </li>
+            <li>
+                <div><i class="glyphicon glyphicon-briefcase"></i>发改委<span class="glyphicon glyphicon-menu-right"></span></div>
+            </li>
+            <li>
+                <div><i class="glyphicon glyphicon-briefcase"></i>发改委<span class="glyphicon glyphicon-menu-right"></span></div>
+            </li>
+            <li>
+                <div><i class="glyphicon glyphicon-briefcase"></i>发改委<span class="glyphicon glyphicon-menu-right"></span></div>
+            </li>
+            <li>
+                <div><i class="glyphicon glyphicon-briefcase"></i>发改委<span class="glyphicon glyphicon-menu-right"></span></div>
+            </li>
+            <li class="btnShowAll">显示全部</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="currentSite">
+            当期位置：发改委<span class="glyphicon glyphicon-menu-right"></span>全部
+        </div>
+        <div class="contentBody">
+            <div class="infoQuery">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <label>资源名称：</label><input type="text" class="form-control" >
+                    </div>
+                    <div class="form-group">
+                        <label>资源ID：</label><input type="text" class="form-control" >
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label>发布日期：</label><input type="text" id="startDate" class="form-control" value="2015-06-22"/>
+                        <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
+                    </div>
+                    -
+                    <div class="form-group has-feedback">
+                        <input type="text" id="endDate" class="form-control" value="2015-07-22"/>
+                        <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
+                    </div>
+                </div>
+                <div class="form-inline">
+                    <div class="form-group">
+                        <label>业务域：</label><input type="text" class="form-control" >
+                    </div>
+                    <div class="form-group">
+                        <label>业务线：</label><input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-inline">
+                    <div class="form-group">
+                        <label>关键字：</label><input type="text" class="form-control" >
+                        <span class="keyword marginLeft">开放共享(212)</span>
+                        <span class="keyword">社会公开(178)</span>
+                        <span class="keyword">户籍信息(122)</span>
+                        <span class="keyword">营业执照(99)</span>
+                        <span class="keyword">......</span>
+                    </div>
+                </div>
+                <div class="basicCatalog solidBorderBottom">
+                    <label>基础编目：</label><button class="deptTag hide">全部<span class="close">&times;</span></button><button class="deptTag">发改委<span class="close">&times;</span></button>
+                    <button class="deptTag">服务<span class="close">&times;</span></button>
+                    <button class="btn btn-default btnDisplay btnBack"><span class="glyphicon glyphicon-menu-up"></span></button>
+                </div>
+                <div class="checkboxGroup on">
+                    <div class="dashedBorderBottom">
+                        <label>政务部门：</label>
+                        <input type="checkbox"/><label>全部</label>
+                        <input type="checkbox" checked="checked"/><label>发改委</label>
+                        <input type="checkbox"/><label>卫计</label>
+                        <input type="checkbox"/><label>人社</label>
+                        <input type="checkbox"/><label>卫计</label>
+                        <input type="checkbox"/><label>人社</label>
+                        <input type="checkbox"/><label>卫计</label>
+                        <input type="checkbox"/><label>人社</label>
+                        <input type="checkbox"/><label>卫计</label>
+                        <span class="showAllDept">显示全部部门<span class="glyphicon glyphicon-menu-down showDept"></span></span>
+                    </div>
+                    <div class="dashedBorderBottom">
+                        <label>基础类别：</label>
+                        <input type="checkbox"/><label>全部</label>
+                        <input type="checkbox" checked="checked"/><label>服务</label>
+                        <input type="checkbox"/><label>数据</label>
+                        <input type="checkbox"/><label>空间</label>
+                        <input type="checkbox"/><label>证照</label>
+                        <input type="checkbox"/><label>文档</label>
+                        <input type="checkbox"/><label>视频</label>
+                    </div>
+                    <div class="dashedBorderBottom">
+                        <label>共享类别：</label>
+                        <input type="checkbox"/><label>全部</label>
+                        <input type="checkbox"/><label>开放共享</label>
+                        <input type="checkbox"/><label>授权共享</label>
+                        <input type="checkbox"/><label>社会公开</label>
+                    </div>
+                </div>
+                <div class="extendCatalog solidBorderBottom">
+                    <label>扩展编目：</label>
+                    <button class="btn btn-default btnDisplay btnExtend"><span class="glyphicon glyphicon-menu-down"></span></button>
+                </div>
+                <div class="checkboxGroup">
+                    <div class="dashedBorderBottom">
+                        <label>政务部门：</label>
+                        <input type="checkbox"/><label>全部</label>
+                        <input type="checkbox"/><label>发改委</label>
+                        <input type="checkbox"/><label>卫计</label>
+                        <input type="checkbox"/><label>人社</label>
+                        <input type="checkbox"/><label>卫计</label>
+                        <input type="checkbox"/><label>人社</label>
+                        <input type="checkbox"/><label>卫计</label>
+                        <input type="checkbox"/><label>人社</label>
+                        <input type="checkbox"/><label>卫计</label>
+                        <span class="showAllDept">显示全部部门<span class="glyphicon glyphicon-menu-down showDept"></span></span>
+                    </div>
+                    <div class="dashedBorderBottom">
+                        <label>基础类别：</label>
+                        <input type="checkbox"/><label>全部</label>
+                        <input type="checkbox"/><label>服务</label>
+                        <input type="checkbox"/><label>数据</label>
+                        <input type="checkbox"/><label>空间</label>
+                        <input type="checkbox"/><label>证照</label>
+                        <input type="checkbox"/><label>文档</label>
+                        <input type="checkbox"/><label>视频</label>
+                    </div>
+                    <div class="dashedBorderBottom">
+                        <label>共享类别：</label>
+                        <input type="checkbox"/><label>全部</label>
+                        <input type="checkbox"/><label>开放共享</label>
+                        <input type="checkbox"/><label>授权共享</label>
+                        <input type="checkbox"/><label>社会公开</label>
+                    </div>
+                </div>
+                <div class="btnGroup">
+                    <button class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-search"></span>查询</button>
+                    <button class="btn btn-warning btn-lg"><span class="glyphicon glyphicon-repeat"></span>重置</button>
+                </div>
+            </div>
+            <div class="export">
+                <button class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-share"></span>导出资源目录</button>
+            </div>
+            <div class="queryResult">
+                <table class="resultTable">
+                    <tr class="borderBottom">
+                        <th width="25%">资源名称</th>
+                        <th width="17%">资源ID</th>
+                        <th width="10%">状态</th>
+                        <th width="10%">部门</th>
+                        <th width="10%">类型</th>
+                        <th width="18%">发布日期</th>
+                        <th width="10%">操作</th>
+                    </tr>
+                    <tr>
+                        <td>行政许可目录编制</td>
+                        <td>35DFG/X0001</td>
+                        <td><span class="toBeBuild">待建</span></td>
+                        <td>发改委</td>
+                        <td>业务事项</td>
+                        <td>2015-07-20</td>
+                        <td><a>详细</a></td>
+                    </tr>
+                    <tr class="bgColor">
+                        <td>港口项目建议书审批</td>
+                        <td>35DFG/Y0001</td>
+                        <td><span class="haveBeenBuild">已建</span></td>
+                        <td>发改委</td>
+                        <td>业务信息</td>
+                        <td>2015-07-21</td>
+                        <td><a>详细</a></td>
+                    </tr>
+                    <tr>
+                        <td>行政许可目录编制</td>
+                        <td>35DFG/X0001</td>
+                        <td><span class="toBeBuild">待建</span></td>
+                        <td>发改委</td>
+                        <td>业务事项</td>
+                        <td>2015-07-20</td>
+                        <td><a>详细</a></td>
+                    </tr>
+                    <tr class="bgColor">
+                        <td>港口项目建议书审批</td>
+                        <td>35DFG/Y0001</td>
+                        <td><span class="haveBeenBuild">已建</span></td>
+                        <td>发改委</td>
+                        <td>业务信息</td>
+                        <td>2015-07-21</td>
+                        <td><a>详细</a></td>
+                    </tr>
+                    <tr>
+                        <td>行政许可目录编制</td>
+                        <td>35DFG/X0001</td>
+                        <td><span class="toBeBuild">待建</span></td>
+                        <td>发改委</td>
+                        <td>业务事项</td>
+                        <td>2015-07-20</td>
+                        <td><a>详细</a></td>
+                    </tr>
+                    <tr class="bgColor">
+                        <td>港口项目建议书审批</td>
+                        <td>35DFG/Y0001</td>
+                        <td><span class="haveBeenBuild">已建</span></td>
+                        <td>发改委</td>
+                        <td>业务信息</td>
+                        <td>2015-07-21</td>
+                        <td><a>详细</a></td>
+                    </tr>
+                    <tr>
+                        <td>行政许可目录编制</td>
+                        <td>35DFG/X0001</td>
+                        <td><span class="toBeBuild">待建</span></td>
+                        <td>发改委</td>
+                        <td>业务事项</td>
+                        <td>2015-07-20</td>
+                        <td><a>详细</a></td>
+                    </tr>
+                    <tr class="bgColor">
+                        <td>港口项目建议书审批</td>
+                        <td>35DFG/Y0001</td>
+                        <td><span class="haveBeenBuild">已建</span></td>
+                        <td>发改委</td>
+                        <td>业务信息</td>
+                        <td>2015-07-21</td>
+                        <td><a>详细</a></td>
+                    </tr>
+                    <tr>
+                        <td>行政许可目录编制</td>
+                        <td>35DFG/X0001</td>
+                        <td><span class="toBeBuild">待建</span></td>
+                        <td>发改委</td>
+                        <td>业务事项</td>
+                        <td>2015-07-20</td>
+                        <td><a>详细</a></td>
+                    </tr>
+                    <tr class="bgColor">
+                        <td>港口项目建议书审批</td>
+                        <td>35DFG/Y0001</td>
+                        <td><span class="haveBeenBuild">已建</span></td>
+                        <td>发改委</td>
+                        <td>业务信息</td>
+                        <td>2015-07-21</td>
+                        <td><a>详细</a></td>
+                    </tr>
+                </table>
+                <div class="pageInfo">
+                    <button class="btn btn-default disabled" >共10条 每页10条 1/1页</button>
+                    <div class="pageTo btn-group" role="group">
+                        <button type="button" class="btn btn-default">&lt;&lt;</button>
+                        <button type="button" class="btn btn-default">&lt;</button>
+                        <button type="button" class="btn btn-primary">1</button>
+                        <button type="button" class="btn btn-default">&gt;</button>
+                        <button type="button" class="btn btn-default">&gt;&gt;</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

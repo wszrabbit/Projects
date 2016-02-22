@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,Chrome=1"/>
+    <title>公文传阅</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="js/jquery.datetimepicker.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv-3.7.3.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/ie8_getEBCN.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="办公自动品台">
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="oaSys" id="oaSys">
+            <img src="images/ico_oa.png" alt="...">办公系统<span class="glyphicon glyphicon-triangle-top"></span>
+        </div>
+        <ul class="menu" id="menu">
+            <li>
+                <div class="on"><span class="glyphicon glyphicon-book"></span>公文传阅</div>
+            </li>
+            <li>
+                <div><span class="glyphicon glyphicon-comment"></span>通知通告</div>
+            </li>
+            <li>
+                <div><span class="glyphicon glyphicon-list-alt"></span>政策法规</div>
+            </li>
+            <li>
+                <div><span class="glyphicon glyphicon-tasks"></span>任务中心</div>
+            </li>
+            <li>
+                <div id="hasSub"><span class="glyphicon glyphicon-envelope"></span>短信管理<span
+                        class="glyphicon glyphicon-menu-down pull-right"></span></div>
+                <ul id="subMenu" class="subMenu">
+                    <li>发送短信</li>
+                    <li>短信记录</li>
+                    <li>通讯录</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="contentTitle">公文传阅</div>
+        <div class="contentBody">
+            <div class="docQuery">
+                <div>
+                    <span>标题：</span><input type="text" placeholder="可模糊查询">
+                </div>
+                <div>
+                    <span>发文单位：</span><input type="text" placeholder="可模糊查询">
+                </div>
+                <div>
+                    <span>公文字号：</span><input type="text" placeholder="可模糊查询">
+                </div>
+                <div>
+                    <span>发文时间：</span><input type="text" id="datetimepicker1">
+                    <span class="glyphicon glyphicon-calendar startDate"></span>
+                    -
+                    <input type="text" id="datetimepicker2">
+                    <span class="glyphicon glyphicon-calendar endDate"></span>
+                </div>
+                <div>
+                    <span>重要性：</span><select>
+                    <option>不限</option>
+                    <option>普通</option>
+                    <option>高级</option>
+                </select>
+                    <button class="btnQuery" type="button">查询</button>
+                    <button class="btnReset" type="button">重置</button>
+                    <button class="btnCreate" type="button">创建</button>
+                </div>
+            </div>
+            <div class="btnGroup">
+                <table>
+                    <tr>
+                        <td>
+                            <button><span class="glyphicon glyphicon-envelope"></span>发送短信</button>
+                        </td>
+                        <td>
+                            <button><span class="glyphicon glyphicon-send"></span>发送所有人员</button>
+                        </td>
+                        <td>
+                            <button class="active"><span class="glyphicon glyphicon-plus-sign"></span>添加</button>
+                        </td>
+                        <td>
+                            <button><span class="glyphicon glyphicon-user"></span>添加到群组</button>
+                        </td>
+                        <td style="border-right:none;">
+                            <button><span class="glyphicon glyphicon-trash"></span>删除</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tableWrap">
+                <table>
+                    <tr>
+                        <th>序号<span class="thDivider">|</span></th>
+                        <th>标题<span class="thDivider">|</span></th>
+                        <th>发文单位<span class="thDivider">|</span></th>
+                        <th>公文字号<span class="thDivider">|</span></th>
+                        <th>发文时间<span class="thDivider">|</span></th>
+                        <th>重要性<span class="thDivider">|</span></th>
+                        <th>操作区</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="even">111</td>
+                        <td>11</td>
+                        <td class="even">11111</td>
+                        <td>2015-06-29</td>
+                        <td class="even">普通</td>
+                        <td>
+                            <a>查看</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="even">55555</td>
+                        <td>55555</td>
+                        <td class="even">55555</td>
+                        <td>2015-07-17</td>
+                        <td class="even">高级</td>
+                        <td>
+                            <a>查看</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="even">2</td>
+                        <td>2</td>
+                        <td class="even">2</td>
+                        <td>2015-07-02</td>
+                        <td class="even">普通</td>
+                        <td>
+                            <a>查看</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="even">000</td>
+                        <td>00</td>
+                        <td class="even">0</td>
+                        <td>2015-07-06</td>
+                        <td class="even">普通</td>
+                        <td>
+                            <a>查看</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pageTo">
+                共有4条信息<span>|</span>每页显示
+                <input type="text" value="10"/>条
+                <button class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-step-backward"></i></button>
+                <button class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-triangle-left"></i></button>
+                <input type="text" value="1/1"/>页
+                <button class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-triangle-right"></i></button>
+                <button class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-step-forward"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.form-box .form-item .form-control {
+    display: inline-block;
+    width: 130px;
+}
+
+.tooltip-box {
+    top: 0;
+    left: 200px;
+    width: 550px;
+}
+.tooltip-box:before, .tooltip-box:after {
+    content: '';
+    position: absolute;
+    top: 65px;
+    left: -30px;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-right-color: #fff;
+}
+.tooltip-box:before{
+    left: -31px;
+    border-right-color: #00f;
+}
+
+/*审核模态框*/
+#modal-audit .radio-inline input[type=radio] {
+    top: -2px;
+}
+#modal-audit label {
+    min-width: 0;
+}
+#modal-audit .table-bordered>tbody>tr>th {
+    text-align: center;
+}

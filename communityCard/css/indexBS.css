@@ -1,0 +1,187 @@
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,fieldset,
+select,button,textarea,p,blockquote,th,td{
+    margin: 0;padding: 0;
+    list-style: none;
+    font:12px/1.5  "sans-serif", "宋体", "Tahoma";
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+button span {
+    margin-right:5px;
+}
+.hide {
+    display: none;
+}
+
+/*侧边栏*/
+.sidebar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 180px;
+    overflow-y: auto;
+    background-color: #e5e6e8;
+    border-right: 1px solid #C3C4C5;
+}
+.sidebar .logo {
+    color: #214374;
+    font-size: 20px;
+    padding: 20px 20px;;
+    border-bottom: 1px solid #ccc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.sidebar .logo .icoHome {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    color:#fff;
+    font-size: 14px;
+    text-align: center;
+    background: #105481;
+    margin-right: 5px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+/*侧边栏菜单*/
+.sidebar .menu {
+    position: absolute;
+    top: 71px;
+    width: 100%;
+    overflow-y: auto;
+}
+.sidebar .menu .title {
+    background-color: #DBDFDF;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.sidebar .menu .title i {
+    font-size:16px;
+    margin-right: 10px;
+    color: #105481;
+}
+.sidebar .menu .title span {
+    float: right;
+}
+.sidebar .menu .subMenu li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.sidebar .menu .subMenu li:hover, .subMenu li.active {
+    border-right: 2px solid #337ab7;
+}
+
+/*主体内容*/
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 180px;
+}
+/*主体内容标题*/
+.content .contentTitle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: #214374;
+    background-color: #F5F7F5;
+    border-bottom: 1px solid #ddd;
+}
+
+/*主体内容主体*/
+.content .contentBody {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: auto;
+}
+.content .contentBody > div {
+    min-width: 844px;
+}
+.infoQuery {
+    padding: 20px 20px 0 20px;
+}
+.infoQuery .form-group {
+    margin-right:20px;
+}
+.infoQuery label {
+    font-weight:normal;
+}
+.infoQuery .form-inline {
+    margin-bottom:15px;
+}
+.infoQuery .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.infoQuery .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+/*查询结果*/
+.contentBody .queryResult table {
+    width: 100%;
+    border-collapse:collapse;
+    border-top: 1px solid #eee;
+}
+.contentBody .queryResult table th {
+    font-size: 14px;
+    font-weight: bold;
+}
+.contentBody .queryResult .thDivider {
+    float: right;
+    font-weight: normal;
+}
+.contentBody .queryResult table tr {
+    border-bottom: 2px solid #fff;
+}
+.contentBody .queryResult th,
+.contentBody .queryResult td {
+    height: 35px;
+    text-align: center;
+}
+.contentBody .queryResult table td {
+    background-color: #e3e9e9;
+}
+.contentBody .queryResult table td.even {
+    background-color: #EDF1F3;
+}
+.contentBody .queryResult td span {
+    color: #00f;
+    cursor: pointer;
+}
+
+.contentBody .pageTo {
+    padding: 10px 30px;
+    text-align: right;
+}
+.contentBody .pageTo input {
+    width: 40px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0;
+    text-align: center;
+    margin: 5px;
+    vertical-align: middle;
+}
+.contentBody .pageTo button {
+    margin:0 2px;
+}
