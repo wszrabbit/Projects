@@ -1,0 +1,5 @@
+@charset "UTF-8";
+.form-box .form-item .form-control {
+    display: inline-block;
+    width: 130px;
+}

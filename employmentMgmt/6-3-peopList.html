@@ -26,19 +26,240 @@
         </div>
         <div class="cc-main">
             <div class="cm-box">
-
+                <div class="form-box">
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <a role="button" class="btn btn-purple btn-sm" data-toggle="modal" data-target="#modal-tel">电话推荐</a>
+                            <a role="button" class="btn btn-orange btn-sm" data-toggle="modal"
+                               data-target="#modal-message">短信推荐</a>
+                            <a role="button" class="btn btn-green btn-sm" data-toggle="modal"
+                               data-target="#modal-weixin">微信推荐</a>
+                            <a role="button" class="btn btn-primary btn-sm">导出</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-box">
+                    <div id="tb-info1"></div>
+                    <div id="tb-pageBar"></div>
+                </div>
             </div>
         </div>
+    </div>
+</div>
 
+<!-- 电话模态框 -->
+<div class="modal fade" id="modal-tel" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">电话推荐</h4>
+            </div>
+            <div class="modal-body">
+                <p>当前岗位已添加到所选居民的112表就业推荐记录中，</p>
+                <p>后续请到【“112”就业服务登记】页面填写“是否就业”等信息！</p>
+            </div>
+            <div class="modal-footer tc">
+                <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">我知道了</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 短信模态框 -->
+<div class="modal fade" id="modal-message" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">短信发送</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-box">
+                    <div class="clearfix">
+                        <label>
+                            <span class="star">*</span>
+                            接收人：
+                        </label>
+                        <div class="form-item-inline">
+                            <div class="receiver">
+                                <a role="button" class="btn btn-default btn-sm">13456789098<span class="glyphicon glyphicon-remove-sign blue"></span></a>
+                            </div>
+                        </div>
+                        <div class="form-item-inline">
+                            <a role="button" class="btn btn-primary btn-sm">添加手机号</a>
+                            <a role="button" class="btn btn-primary btn-sm">选择联系人</a>
+                            <p class="fr">接受人数<span class="red "> 1 </span>人</p>
+                        </div>
+                        <div class="form-item-inline">
+                            <p class="red">提示：红色表示该人员无法收到短信，如果有人员、号码重复，后台自动去重</p>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>
+                            <span class="star">*</span>
+                            短信内容：
+                        </label>
+                        <div class="form-item-inline">
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <div class="form-item-inline">
+                            <p class="fl">字数600字以内</p>
+                            <p class="fr">当前短信字数 <span class="red">0</span></p>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>短信标题：</label>
+                            <div class="form-item-inline">
+                                <input type="text" class="form-control input-sm input-s">
+                                （注：企业签名为 <input type="text" class="form-control input-sm">）
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>
+                            发送方式：
+                        </label>
+                        <div class="form-item-inline form-item-height">
+                            <label class="radio-inline">
+                                <input type="radio" name="sendWay"> 立即发送
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="sendWay"> 定时发送
+                            </label>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>
+                                <span class="star">*</span>
+                                短信分类：
+                            </label>
+                            <div class="form-item-inline">
+                                <select class="form-control input-sm input-s">
+                                    <option value="--请选择--">--请选择--</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer tc">
+                <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">发送</button>
+                <button type="button" class="btn btn-gray btn-sm" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 微信模态框 -->
+<div class="modal fade" id="modal-weixin" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-tabs">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#weixinPlatform" aria-controls="weixinPlatform"
+                                                              role="tab"
+                                                              data-toggle="tab">微信平台</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="weixinPlatform">
+                        <div class="form-box">
+                            <div class="clearfix">
+                                <div class="form-item">
+                                    <label>
+                                        菜单栏目：
+                                    </label>
+                                </div>
+                                <div class="form-item">
+                                    <select class="form-control input-sm input-xs">
+                                        <option value="居民服务" selected>居民服务</option>
+                                    </select>
+                                </div>
+                                <div class="form-item">
+                                    <select class="form-control input-sm input-xs">
+                                        <option value="培训通知" selected>培训通知</option>
+                                    </select>
+                                </div>
+                                <div class="form-item">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"> 使用外部链接
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="form-item">
+                                    <label>
+                                        标题图片：
+                                    </label>
+                                </div>
+                                <div class="form-item">
+                                    <a role="button" class="btn btn-default btn-sm"><span
+                                            class="glyphicon glyphicon-upload"></span>点击上传</a>
+                                </div>
+                            </div>
+                            <div class="clearfix" style="margin-bottom: 0;">
+                                <div class="form-item">
+                                    <label>
+                                        <span class="star">*</span>
+                                        文章简介：
+                                    </label>
+                                </div>
+                                <div class="form-item-fr">
+                                    字数限制
+                                    <span class="red">100</span>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <textarea class="form-control"></textarea>
+                            </div>
+                            <div class="clearfix">
+                                <div class="form-item" style="margin-right: 0;">
+                                    <label>
+                                        <span class="star">*</span> 封面大图：
+                                    </label>
+                                </div>
+                                <div class="form-item">
+                                    <a role="button" class="btn btn-default btn-sm"><span
+                                            class="glyphicon glyphicon-upload"></span>点击上传</a>
+                                </div>
+                            </div>
+                            <div class="clearfix" style="margin-bottom: 0;">
+                                <div class="form-item">
+                                    <label>
+                                        文章链接url：
+                                        <span class="red">（同内容为二选一必填）</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <textarea class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer tl">
+                <button type="button" class="btn btn-blue btn-sm" data-dismiss="modal">发布</button>
+                <button type="button" class="btn btn-gray btn-sm" data-dismiss="modal">取消</button>
+            </div>
+        </div>
     </div>
 </div>
 
 <script type="text/javascript" src="lib/jQuery/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="lib/bootstrap3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/placeholder/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="lib/datetimepicker/jquery.datetimepicker.js"></script>
+<script type="text/javascript" src="lib/artTemplate/template-simple.js"></script>
 <script type="text/javascript" src="lib/ulynlist/ulynlist.js"></script>
 <script type="text/javascript" src="lib/ulynlist/ulynlist.table.js"></script>
 <script type="text/javascript" src="lib/ulynlist/ulynlist.pagebar.js"></script>
 <script type="text/javascript" src="lib/qlTree/qlTree.js"></script>
 <script type="text/javascript" src="js/6-1-peopPolicyMgmt.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,10 @@
     <title>优惠政策管理-发布/编辑优惠政策</title>
 
     <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/datetimepicker/jquery.datetimepicker.css">
     <link rel="stylesheet" href="lib/qlTree/qlTree.css">
     <link rel="stylesheet" href="styles/css/base.css">
+    <link rel="stylesheet" href="styles/css/5-2-pub_editEntps.css">
 
     <!--[if lt IE 9]>
     <script type="text/javascript" src="lib/html5shiv/html5shiv-3.7.3.min.js"></script>
@@ -26,19 +28,223 @@
         </div>
         <div class="cc-main">
             <div class="cm-box">
-
+                <div class="form-box">
+                    <div class="clearfix">
+                        <div class="fr">
+                            <a class="btn btn-sm btn-blue" href="5-1-entpsPolicyMgmt.html">发布</a>
+                            <a class="btn btn-sm btn-gray" href="5-1-entpsPolicyMgmt.html">取消</a>
+                            <a class="btn btn-sm btn-success" data-toggle="modal" data-target="#modal-weixin">微信发布</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-box-title"></div>
+                <div class="form-box">
+                    <div class="clearfix">
+                        <label>
+                            <span class="star">*</span>
+                            优惠政策类别：
+                        </label>
+                        <div class="form-item-inline">
+                            <label class="radio-inline">
+                                <input type="radio" name="policy-type"> 惠企优惠政策
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="policy-type"> 惠民优惠政策
+                            </label>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>
+                            <span class="star">*</span>
+                            优惠政策：
+                        </label>
+                        <div class="form-item-inline">
+                            <input type="text" class="form-control input-sm">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>
+                            <span class="star">*</span>
+                            扶持对象：
+                        </label>
+                        <div class="form-item-inline">
+                            <input type="text" class="form-control input-sm">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-item">
+                            <label>
+                                <span class="star">*</span>
+                                生效日期：
+                            </label>
+                            <div class="form-item-inline">
+                                <input type="text" class="form-control input-sm date">
+                            </div>
+                        </div>
+                        <div class="form-item-fr">
+                            <label style="min-width: 90px;">
+                                <span class="star">*</span>
+                                失效日期：
+                            </label>
+                            <div class="form-item-inline">
+                                <input type="text" class="form-control input-sm date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>
+                            <span class="star">*</span>
+                            承办单位：
+                        </label>
+                        <div class="form-item-inline">
+                            <input type="text" class="form-control input-sm">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>
+                            一、申办条件
+                        </label>
+                        <div class="">
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>
+                            二、提供材料
+                        </label>
+                        <div class="">
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>
+                            三、办理程序
+                        </label>
+                        <div class="">
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>
+                            四、注意事项
+                        </label>
+                        <div class="">
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
     </div>
 </div>
 
+<!-- 微信模态框 -->
+<div class="modal fade" id="modal-weixin" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-tabs">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#weixinPlatform" aria-controls="weixinPlatform"
+                                                              role="tab"
+                                                              data-toggle="tab">微信平台</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="weixinPlatform">
+                        <div class="form-box">
+                            <div class="clearfix">
+                                <div class="form-item">
+                                    <label>
+                                        菜单栏目：
+                                    </label>
+                                </div>
+                                <div class="form-item">
+                                    <select class="form-control input-sm input-xs">
+                                        <option value="居民服务" selected>居民服务</option>
+                                    </select>
+                                </div>
+                                <div class="form-item">
+                                    <select class="form-control input-sm input-xs">
+                                        <option value="培训通知" selected>培训通知</option>
+                                    </select>
+                                </div>
+                                <div class="form-item">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"> 使用外部链接
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="form-item">
+                                    <label>
+                                        标题图片：
+                                    </label>
+                                </div>
+                                <div class="form-item">
+                                    <a role="button" class="btn btn-default btn-sm"><span
+                                            class="glyphicon glyphicon-upload"></span>点击上传</a>
+                                </div>
+                            </div>
+                            <div class="clearfix" style="margin-bottom: 0;">
+                                <div class="form-item">
+                                    <label>
+                                        <span class="star">*</span>
+                                        文章简介：
+                                    </label>
+                                </div>
+                                <div class="form-item-fr">
+                                    字数限制
+                                    <span class="red">100</span>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <textarea class="form-control"></textarea>
+                            </div>
+                            <div class="clearfix">
+                                <div class="form-item" style="margin-right: 0;">
+                                    <label>
+                                        <span class="star">*</span> 封面大图：
+                                    </label>
+                                </div>
+                                <div class="form-item">
+                                    <a role="button" class="btn btn-default btn-sm"><span
+                                            class="glyphicon glyphicon-upload"></span>点击上传</a>
+                                </div>
+                            </div>
+                            <div class="clearfix" style="margin-bottom: 0;">
+                                <div class="form-item">
+                                    <label>
+                                        文章链接url：
+                                        <span class="red">（同内容为二选一必填）</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <textarea class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer tl">
+                <button type="button" class="btn btn-blue btn-sm" data-dismiss="modal">发布</button>
+                <button type="button" class="btn btn-gray btn-sm" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script type="text/javascript" src="lib/jQuery/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="lib/bootstrap3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/placeholder/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="lib/datetimepicker/jquery.datetimepicker.js"></script>
+<script type="text/javascript" src="lib/artTemplate/template-simple.js"></script>
 <script type="text/javascript" src="lib/ulynlist/ulynlist.js"></script>
 <script type="text/javascript" src="lib/ulynlist/ulynlist.table.js"></script>
 <script type="text/javascript" src="lib/ulynlist/ulynlist.pagebar.js"></script>
 <script type="text/javascript" src="lib/qlTree/qlTree.js"></script>
 <script type="text/javascript" src="js/5-1-entpsPolicyMgmt.js"></script>
-</body>
+<script type="text/javascript" src="js/public.js"></script>
 </html>

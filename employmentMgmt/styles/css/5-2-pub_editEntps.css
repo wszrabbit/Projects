@@ -1,0 +1,34 @@
+@charset "UTF-8";
+.form-box .clearfix {
+    margin-bottom: 10px;
+}
+.form-box-title {
+    padding: 0;
+    margin: 0 10px 10px;
+}
+.form-box label {
+    float: left;
+    margin-right: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.form-box .form-item-inline {
+    position: relative;
+    margin-left: 90px;
+}
+.form-box .form-item,
+.form-box .form-item-fr{
+    padding: 0;
+    margin-right: 0;
+}
+.form-box .form-item .form-control,
+.form-box .form-item-fr .form-control {
+    display: inline-block;
+    width: 220px;
+}
+.form-box .form-item-fr .input-xs, .form-box .form-item .input-xs {
+    width: 101px;
+}
+.date {
+    background: #fff url("../../images/ico_date.png") no-repeat 190px center;
+}

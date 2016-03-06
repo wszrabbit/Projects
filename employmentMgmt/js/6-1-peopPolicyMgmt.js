@@ -11,8 +11,84 @@
  *
  */
 $(document).ready(function(){
-    qlTree(); //左侧导航条
+    qlTree();               //左侧导航条
+    entpsPolicyTable();     //优惠政策表
+    entpsListTable();       //企业名单表
 });
+function entpsListTable(){
+    $("#tb-info1").ulynlist({
+        basePath: "lib/ulynlist",
+        tableTpl: "flat",
+        pageBarTpl: "flat",
+        tableColumn: {
+            title: "示例",
+            keyColumn: "",
+            columns: [
+                {field: 'CHECKED', checkbox: 'ID', className: "unsortable checkeds"},
+                {field: 'MC', label: '企业名称', className: "sortable"},
+                {field: 'ZCH', label: '企业注册号', className: "unsortable"},
+                {field: 'ZCDZ', label: '企业注册地址', className: "unsortable"},
+                {field: 'SSHY', label: '所属行业', className: "unsortable"},
+                {field: 'LXR', label: '联系人', className: "unsortable"},
+                {field: 'TEL', label: '联系电话', className: "unsortable"},
+                {field: 'DATE', label: '推荐日期', className: "unsortable"}
+            ],
+            rownumbers: false
+        },
+        customData: [
+            {
+            }
+        ],
+        requestData: {linesPerPage: 10},
+        fullRow: 10,
+        pageBarId: 'tb-pageBar',
+        afterTableRender: function () {
+        }
+    });
+}
+function entpsPolicyTable(){
+    $("#tb-info2").ulynlist({
+        basePath: "lib/ulynlist",
+        tableTpl: "flat",
+        pageBarTpl: "flat",
+        tableColumn: {
+            title: "示例",
+            keyColumn: "",
+            columns: [
+                {field: 'MC', label: '优惠政策名称', className: "sortable"},
+                {field: 'DX', label: '优惠对象', className: "unsortable"},
+                {field: 'SJ', label: '生效时间', className: "unsortable"},
+                {field: 'SXSJ', label: '失效时间', className: "unsortable"},
+                {field: 'TJRC', label: '已推荐人次', className: "unsortable"},
+                {field: 'CZ', label: '操作', className: "unsortable"}
+            ],
+            rownumbers: false
+        },
+        customData: [
+            {
+                "MC": "<a href='5-2-pub_editEntps.html'>自主创业奖励</a>",
+                "DX": "经营实体营业执照上载明的法定代表人（或经营者、执行事务合伙人、负责人）必须是自主创业扶持对象",
+                "SJ": "",
+                "SXSJ": "",
+                "TJRC": "",
+                "CZ": "<a href='6-3-peopList.html'>查看居民名单</a>"
+            },
+            {
+                "MC": "<a href='5-2-pub_editEntps.html'>自主创业奖励</a>",
+                "DX": "经营实体营业执照上载明的法定代表人（或经营者、执行事务合伙人、负责人）必须是自主创业扶持对象",
+                "SJ": "",
+                "SXSJ": "",
+                "TJRC": "",
+                "CZ": "<a href='6-3-peopList.html'>查看居民名单</a>"
+            }
+        ],
+        requestData: {linesPerPage: 10},
+        fullRow: 8,
+        pageBarId: 'tb-pageBar',
+        afterTableRender: function () {
+        }
+    });
+}
 function qlTree(){
     var data = {
         "list":[

@@ -14,7 +14,7 @@ $(document).ready(function(){
     qlTree();               //左侧导航条
     manMgmtTable();         //人员管理信息表
     employRecord();         //就业推荐历史记录表
-    trainRecord();         //培训推荐及结果历史记录表
+    trainRecord();          //培训推荐及结果历史记录表
 });
 function trainRecord(){
     $("#tb-info1").ulynlist({
@@ -85,7 +85,7 @@ function employRecord(){
     });
 }
 function manMgmtTable() {
-    $("#tb-info").ulynlist({
+    $("#tb-info2").ulynlist({
         basePath: "lib/ulynlist",
         tableTpl: "flat",
         pageBarTpl: "flat",

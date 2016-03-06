@@ -2,20 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d5b319e-693c-441c-96f6-79bc83d53060" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/css/4-2-manInfo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/css/3-5-edit.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/css/4-1-manMgmt.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/5-1-entpsPolicyMgmt.html" afterPath="$PROJECT_DIR$/5-1-entpsPolicyMgmt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/4-1-manMgmt.js" afterPath="$PROJECT_DIR$/js/4-1-manMgmt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4-1-manMgmt.html" afterPath="$PROJECT_DIR$/4-1-manMgmt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/3-1-trainMgmt.js" afterPath="$PROJECT_DIR$/js/3-1-trainMgmt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4-2-manInfo.html" afterPath="$PROJECT_DIR$/4-2-manInfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/base.css" afterPath="$PROJECT_DIR$/styles/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/3-2-pub_editTrain.css" afterPath="$PROJECT_DIR$/styles/css/3-2-pub_editTrain.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/css/5-1-entpsPolicyMgmt.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/css/5-2-pub_editEntps.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/css/5-3-entpsList.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3-5-edit.html" afterPath="$PROJECT_DIR$/3-5-edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3-3-trainRecommend.html" afterPath="$PROJECT_DIR$/3-3-trainRecommend.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3-1-trainMgmt.html" afterPath="$PROJECT_DIR$/3-1-trainMgmt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4-1-manMgmt.html" afterPath="$PROJECT_DIR$/4-1-manMgmt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4-2-manInfo.html" afterPath="$PROJECT_DIR$/4-2-manInfo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/5-1-entpsPolicyMgmt.html" afterPath="$PROJECT_DIR$/5-1-entpsPolicyMgmt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/5-2-pub_editEntps.html" afterPath="$PROJECT_DIR$/5-2-pub_editEntps.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/5-3-entpsList.html" afterPath="$PROJECT_DIR$/5-3-entpsList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/6-1-peopPolicyMgmt.html" afterPath="$PROJECT_DIR$/6-1-peopPolicyMgmt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/6-3-peopList.html" afterPath="$PROJECT_DIR$/6-3-peopList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/4-1-manMgmt.js" afterPath="$PROJECT_DIR$/js/4-1-manMgmt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/5-1-entpsPolicyMgmt.js" afterPath="$PROJECT_DIR$/js/5-1-entpsPolicyMgmt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/6-1-peopPolicyMgmt.js" afterPath="$PROJECT_DIR$/js/6-1-peopPolicyMgmt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../index.html" afterPath="$PROJECT_DIR$/../index.html" />
     </list>
     <ignored path="employmentMgmt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,35 +40,21 @@
       <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-188.64285">
               <caret line="278" column="22" selection-start-line="278" selection-start-column="22" selection-end-line="278" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="4-2-manInfo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/4-2-manInfo.html">
+      <file leaf-file-name="5-3-entpsList.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/5-3-entpsList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="265" selection-end-column="81" />
+            <state vertical-scroll-proportion="-5.607143">
+              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="252" selection-end-column="6" />
               <folding>
-                <element signature="n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#table#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#textarea#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -75,12 +62,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="5-1-entpsPolicyMgmt.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/5-1-entpsPolicyMgmt.html">
+      <file leaf-file-name="6-3-peopList.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/6-3-peopList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.92252254">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-18.5">
+              <caret line="250" column="6" selection-start-line="250" selection-start-column="6" selection-end-line="250" selection-end-column="6" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="6-1-peopPolicyMgmt.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/6-1-peopPolicyMgmt.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.928571">
+              <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="6-1-peopPolicyMgmt.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/6-1-peopPolicyMgmt.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6832192">
+              <caret line="81" column="33" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#293#0" expanded="false" />
+                <element signature="e#491#1537#0" expanded="false" />
+                <element signature="n#!!block;n#qlTree#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,12 +123,6 @@
       <list>
         <option value="$PROJECT_DIR$/dd.html" />
         <option value="$PROJECT_DIR$/js/1-2-pub_editRecInfo.js" />
-        <option value="$PROJECT_DIR$/js/5-1-entpsPolicyMgmt.js" />
-        <option value="$PROJECT_DIR$/js/6-1-peopPolicyMgmt.js" />
-        <option value="$PROJECT_DIR$/6-1-peopPolicyMgmt.html" />
-        <option value="$PROJECT_DIR$/6-3-peopList.html" />
-        <option value="$PROJECT_DIR$/5-2-pub_editEntps.html" />
-        <option value="$PROJECT_DIR$/5-3-entpsList.html" />
         <option value="$PROJECT_DIR$/lib/qlTree/qlTree.css" />
         <option value="$PROJECT_DIR$/js/public.js" />
         <option value="$PROJECT_DIR$/styles/css/1-1-recruitMgmt.css" />
@@ -137,7 +150,6 @@
         <option value="$PROJECT_DIR$/3-3-trainRecommend.html" />
         <option value="$PROJECT_DIR$/3-5-edit.html" />
         <option value="$PROJECT_DIR$/js/3-1-trainMgmt.js" />
-        <option value="$PROJECT_DIR$/4-1-manMgmt.html" />
         <option value="$PROJECT_DIR$/styles/css/3-5-edit.css" />
         <option value="$PROJECT_DIR$/styles/css/4-2-manInfo.html" />
         <option value="$PROJECT_DIR$/styles/css/4-1-manMgmt.css" />
@@ -145,7 +157,17 @@
         <option value="$PROJECT_DIR$/styles/css/base.css" />
         <option value="$PROJECT_DIR$/4-2-manInfo.html" />
         <option value="$PROJECT_DIR$/js/4-1-manMgmt.js" />
+        <option value="$PROJECT_DIR$/4-1-manMgmt.html" />
+        <option value="$PROJECT_DIR$/styles/css/5-1-entpsPolicyMgmt.css" />
         <option value="$PROJECT_DIR$/5-1-entpsPolicyMgmt.html" />
+        <option value="$PROJECT_DIR$/styles/css/5-2-pub_editEntps.css" />
+        <option value="$PROJECT_DIR$/5-2-pub_editEntps.html" />
+        <option value="$PROJECT_DIR$/styles/css/5-3-entpsList.css" />
+        <option value="$PROJECT_DIR$/5-3-entpsList.html" />
+        <option value="$PROJECT_DIR$/js/5-1-entpsPolicyMgmt.js" />
+        <option value="$PROJECT_DIR$/6-1-peopPolicyMgmt.html" />
+        <option value="$PROJECT_DIR$/6-3-peopList.html" />
+        <option value="$PROJECT_DIR$/js/6-1-peopPolicyMgmt.js" />
       </list>
     </option>
   </component>
@@ -191,6 +213,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -223,10 +246,6 @@
               <option name="myItemId" value="styles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -244,7 +263,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,46 +387,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/styles/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="278" column="22" selection-start-line="278" selection-start-column="22" selection-end-line="278" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4-2-manInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="265" selection-end-column="81" />
-          <folding>
-            <element signature="n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#table#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/5-1-entpsPolicyMgmt.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -455,48 +441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/5-1-entpsPolicyMgmt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03264605">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="78" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/6-1-peopPolicyMgmt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65292096">
-          <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/6-3-peopList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9602888">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/6-1-peopPolicyMgmt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8104693">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-3-entpsList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07400722">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-2-pub_editEntps.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72021663">
-          <caret line="24" column="89" selection-start-line="24" selection-start-column="89" selection-end-line="24" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/qlTree/qlTree.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -515,13 +459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.54774773">
           <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/public.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4562607">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -564,13 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-2-pub_editRecInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16216215">
-          <caret line="355" column="20" selection-start-line="355" selection-start-column="20" selection-end-line="415" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -630,38 +560,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2-1-recFairMgmt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6996403">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="179" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3-2-pub_editTrain.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.714285">
-          <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="288" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-3-recruitRecommend.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.857142">
-          <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="168" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2-3-enrollUnitAudit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35071942">
           <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3-1-trainMgmt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57913667">
-          <caret line="90" column="22" selection-start-line="87" selection-start-column="16" selection-end-line="90" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -692,31 +594,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/css/4-1-manMgmt.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2054054">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/3-3-trainRecommend.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="45" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4-1-manMgmt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.928571">
-          <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="119" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/4-1-manMgmt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -727,46 +608,184 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/css/base.css">
+    <entry file="file://$PROJECT_DIR$/styles/css/4-1-manMgmt.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="278" column="22" selection-start-line="278" selection-start-column="22" selection-end-line="278" selection-end-column="22" />
-          <folding />
+        <state vertical-scroll-proportion="0.20503597">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/public.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4571918">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-1-manMgmt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0683453">
+          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-1-recFairMgmt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87410074">
+          <caret line="70" column="26" selection-start-line="65" selection-start-column="19" selection-end-line="70" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3-1-trainMgmt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2356116">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/4-2-manInfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="265" selection-end-column="81" />
+        <state vertical-scroll-proportion="1.2643884">
+          <caret line="260" column="0" selection-start-line="260" selection-start-column="0" selection-end-line="261" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3-2-pub_editTrain.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.12410072">
+          <caret line="39" column="22" selection-start-line="30" selection-start-column="16" selection-end-line="39" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/5-2-pub_editEntps.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.5">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-2-pub_editRecInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.285715">
+          <caret line="100" column="26" selection-start-line="92" selection-start-column="20" selection-end-line="100" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/5-3-entpsList.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6785714">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-188.64285">
+          <caret line="278" column="22" selection-start-line="278" selection-start-column="22" selection-end-line="278" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-3-recruitRecommend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.03417266">
+          <caret line="151" column="26" selection-start-line="143" selection-start-column="20" selection-end-line="151" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/5-1-entpsPolicyMgmt.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13669065">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5-2-pub_editEntps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7266187">
+          <caret line="138" column="10" selection-start-line="138" selection-start-column="10" selection-end-line="138" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/4-1-manMgmt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28424656">
+          <caret line="95" column="83" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6-1-peopPolicyMgmt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.928571">
+          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
           <folding>
-            <element signature="n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#table#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/5-1-entpsPolicyMgmt.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.92252254">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.64928055">
+          <caret line="59" column="22" selection-start-line="30" selection-start-column="16" selection-end-line="59" selection-end-column="22" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/5-1-entpsPolicyMgmt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35787672">
+          <caret line="90" column="1" selection-start-line="14" selection-start-column="4" selection-end-line="90" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#294#0" expanded="false" />
+            <element signature="e#492#1538#0" expanded="false" />
+            <element signature="e#1599#3086#0" expanded="false" />
+            <element signature="n#!!block;n#qlTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5-3-entpsList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.607143">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="252" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6-3-peopList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.5">
+          <caret line="250" column="6" selection-start-line="250" selection-start-column="6" selection-end-line="250" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/6-1-peopPolicyMgmt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6832192">
+          <caret line="81" column="33" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#293#0" expanded="false" />
+            <element signature="e#491#1537#0" expanded="false" />
+            <element signature="n#!!block;n#qlTree#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
